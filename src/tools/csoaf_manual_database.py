@@ -1,0 +1,392 @@
+#!/usr/bin/env python3
+"""
+CSOAF Manual Programs Database
+Creating comprehensive programs dataset for CSOAF based on healing arts standards
+"""
+
+import pandas as pd
+from datetime import datetime
+import json
+
+def create_csoaf_programs_database():
+    """Create comprehensive CSOAF programs database"""
+    
+    # Core CSOAF Programs based on healing arts standards
+    programs = [
+        {
+            'title': 'Adaptive Dance Movement Therapy',
+            'category': 'Dance',
+            'description': 'Therapeutic dance program designed for individuals with disabilities, focusing on movement as healing and self-expression',
+            'target_audience': 'People with Disabilities, Adults',
+            'schedule': 'Weekly',
+            'estimated_annual_cost': 12000,
+            'sessions_per_year': 48,
+            'cost_per_session': 175,
+            'participants_capacity': 15,
+            'instructor_requirements': 'Certified Dance Movement Therapist',
+            'equipment_needed': 'Sound system, adaptive equipment, safety mats',
+            'space_requirements': 'Accessible studio space with mirrors'
+        },
+        {
+            'title': 'Inclusive Music Therapy Sessions',
+            'category': 'Music',
+            'description': 'Music therapy program for diverse abilities, using instruments and voice to promote healing and social connection',
+            'target_audience': 'People with Disabilities, Children/Youth, Adults',
+            'schedule': 'Weekly',
+            'estimated_annual_cost': 15000,
+            'sessions_per_year': 50,
+            'cost_per_session': 200,
+            'participants_capacity': 12,
+            'instructor_requirements': 'Licensed Music Therapist',
+            'equipment_needed': 'Adaptive instruments, sound equipment, recording tools',
+            'space_requirements': 'Soundproof room with piano'
+        },
+        {
+            'title': 'Art Therapy for Trauma Recovery',
+            'category': 'Visual Arts',
+            'description': 'Visual arts therapy program helping individuals process trauma through creative expression and guided art-making',
+            'target_audience': 'Adults, Veterans, People with Disabilities',
+            'schedule': 'Weekly',
+            'estimated_annual_cost': 10000,
+            'sessions_per_year': 45,
+            'cost_per_session': 150,
+            'participants_capacity': 10,
+            'instructor_requirements': 'Licensed Art Therapist',
+            'equipment_needed': 'Art supplies, easels, specialized tools',
+            'space_requirements': 'Well-lit studio with storage'
+        },
+        {
+            'title': 'Inclusive Theater Workshop',
+            'category': 'Theater',
+            'description': 'Collaborative theater program bringing together people of all abilities to create and perform original works',
+            'target_audience': 'People with Disabilities, Children/Youth, Adults',
+            'schedule': 'Weekly',
+            'estimated_annual_cost': 8000,
+            'sessions_per_year': 40,
+            'cost_per_session': 125,
+            'participants_capacity': 20,
+            'instructor_requirements': 'Theater director with inclusive experience',
+            'equipment_needed': 'Costumes, props, lighting, sound system',
+            'space_requirements': 'Theater or large performance space'
+        },
+        {
+            'title': 'Mindfulness & Meditation Circle',
+            'category': 'Healing Arts',
+            'description': 'Guided mindfulness and meditation sessions focused on mental wellness and stress reduction for all abilities',
+            'target_audience': 'Adults, People with Disabilities, Families',
+            'schedule': 'Weekly',
+            'estimated_annual_cost': 6000,
+            'sessions_per_year': 50,
+            'cost_per_session': 75,
+            'participants_capacity': 25,
+            'instructor_requirements': 'Certified mindfulness instructor',
+            'equipment_needed': 'Meditation cushions, sound bowls, aromatherapy',
+            'space_requirements': 'Quiet, comfortable room'
+        },
+        {
+            'title': 'Adaptive Visual Arts Studio',
+            'category': 'Visual Arts',
+            'description': 'Open studio program providing adaptive tools and techniques for visual arts creation across all disability types',
+            'target_audience': 'People with Disabilities, Adults, Children/Youth',
+            'schedule': 'Weekly',
+            'estimated_annual_cost': 9000,
+            'sessions_per_year': 48,
+            'cost_per_session': 125,
+            'participants_capacity': 15,
+            'instructor_requirements': 'Artist with adaptive techniques training',
+            'equipment_needed': 'Adaptive brushes, easels, specialized tools',
+            'space_requirements': 'Accessible art studio'
+        },
+        {
+            'title': 'Family Healing Arts Program',
+            'category': 'General Arts',
+            'description': 'Multi-disciplinary arts program for families affected by disability, fostering connection through shared creative experiences',
+            'target_audience': 'Families, Children/Youth, People with Disabilities',
+            'schedule': 'Monthly',
+            'estimated_annual_cost': 5000,
+            'sessions_per_year': 12,
+            'cost_per_session': 200,
+            'participants_capacity': 30,
+            'instructor_requirements': 'Family therapist with arts background',
+            'equipment_needed': 'Various art supplies, musical instruments',
+            'space_requirements': 'Large, flexible space'
+        },
+        {
+            'title': 'Creative Writing & Storytelling',
+            'category': 'General Arts',
+            'description': 'Adaptive writing program using technology and alternative communication methods to support creative expression',
+            'target_audience': 'People with Disabilities, Adults, Children/Youth',
+            'schedule': 'Weekly',
+            'estimated_annual_cost': 7000,
+            'sessions_per_year': 40,
+            'cost_per_session': 100,
+            'participants_capacity': 12,
+            'instructor_requirements': 'Writer with adaptive communication experience',
+            'equipment_needed': 'Computers, adaptive keyboards, recording equipment',
+            'space_requirements': 'Computer lab or flexible classroom'
+        },
+        {
+            'title': 'Sensory Integration Arts Program',
+            'category': 'Healing Arts',
+            'description': 'Multi-sensory arts program designed for individuals with autism and sensory processing differences',
+            'target_audience': 'People with Disabilities, Children/Youth',
+            'schedule': 'Weekly',
+            'estimated_annual_cost': 11000,
+            'sessions_per_year': 45,
+            'cost_per_session': 150,
+            'participants_capacity': 8,
+            'instructor_requirements': 'Occupational therapist with arts training',
+            'equipment_needed': 'Sensory tools, textured materials, lighting',
+            'space_requirements': 'Sensory-friendly environment'
+        },
+        {
+            'title': 'Professional Development for Artists',
+            'category': 'General Arts',
+            'description': 'Training program for artists working with diverse populations, focusing on inclusive practices and adaptive techniques',
+            'target_audience': 'Adults, Artists, Educators',
+            'schedule': 'Monthly',
+            'estimated_annual_cost': 8000,
+            'sessions_per_year': 12,
+            'cost_per_session': 300,
+            'participants_capacity': 20,
+            'instructor_requirements': 'Expert in inclusive arts education',
+            'equipment_needed': 'Training materials, demonstration tools',
+            'space_requirements': 'Training facility'
+        }
+    ]
+    
+    return programs
+
+def create_csoaf_events_database():
+    """Create CSOAF events database"""
+    
+    events = [
+        {
+            'title': 'Annual Inclusive Arts Showcase',
+            'event_type': 'Performance',
+            'description': 'Year-end performance featuring all program participants showcasing their artistic growth and achievements',
+            'frequency': 'Annual',
+            'estimated_cost': 15000,
+            'expected_attendance': 200,
+            'venue_requirements': 'Accessible theater or auditorium',
+            'sponsorship_opportunity': 'Title sponsor, program sponsors, reception sponsor'
+        },
+        {
+            'title': 'Healing Arts Workshop Series',
+            'event_type': 'Educational',
+            'description': 'Monthly public workshops introducing healing arts concepts to the broader community',
+            'frequency': 'Monthly',
+            'estimated_cost': 2000,
+            'expected_attendance': 30,
+            'venue_requirements': 'Community center or studio space',
+            'sponsorship_opportunity': 'Workshop series sponsor'
+        },
+        {
+            'title': 'Art for All Fundraising Gala',
+            'event_type': 'Fundraising',
+            'description': 'Annual fundraising gala featuring art auction, dinner, and performances by program participants',
+            'frequency': 'Annual',
+            'estimated_cost': 25000,
+            'expected_attendance': 150,
+            'venue_requirements': 'Elegant venue with accessibility features',
+            'sponsorship_opportunity': 'Event title sponsor, table sponsors, auction sponsors'
+        },
+        {
+            'title': 'Community Arts Fair',
+            'event_type': 'Community',
+            'description': 'Free community event showcasing adaptive arts, offering hands-on activities and disability awareness',
+            'frequency': 'Annual',
+            'estimated_cost': 8000,
+            'expected_attendance': 500,
+            'venue_requirements': 'Outdoor space or large community center',
+            'sponsorship_opportunity': 'Activity station sponsors, equipment sponsors'
+        },
+        {
+            'title': 'Family Arts Festival',
+            'event_type': 'Community',
+            'description': 'Weekend festival with family-friendly arts activities, performances, and inclusive play areas',
+            'frequency': 'Annual',
+            'estimated_cost': 12000,
+            'expected_attendance': 300,
+            'venue_requirements': 'Park or community center with multiple spaces',
+            'sponsorship_opportunity': 'Stage sponsor, activity sponsors, food sponsors'
+        }
+    ]
+    
+    return events
+
+def calculate_total_funding_needs(programs, events):
+    """Calculate comprehensive funding needs"""
+    
+    # Program costs
+    total_program_cost = sum(program['estimated_annual_cost'] for program in programs)
+    
+    # Event costs
+    total_event_cost = sum(event['estimated_cost'] for event in events)
+    
+    # Administrative overhead (typically 15-20% for nonprofits)
+    admin_overhead = (total_program_cost + total_event_cost) * 0.18
+    
+    # Equipment and facility costs
+    equipment_costs = 15000  # Annual equipment maintenance/replacement
+    facility_costs = 30000   # Annual facility costs
+    
+    # Professional development and training
+    training_costs = 5000
+    
+    total_annual_need = (
+        total_program_cost + 
+        total_event_cost + 
+        admin_overhead + 
+        equipment_costs + 
+        facility_costs + 
+        training_costs
+    )
+    
+    breakdown = {
+        'program_costs': total_program_cost,
+        'event_costs': total_event_cost,
+        'administrative_overhead': admin_overhead,
+        'equipment_costs': equipment_costs,
+        'facility_costs': facility_costs,
+        'training_costs': training_costs,
+        'total_annual_need': total_annual_need
+    }
+    
+    return breakdown
+
+def create_sponsorship_packages():
+    """Create sponsorship packages for corporations and foundations"""
+    
+    packages = [
+        {
+            'package_name': 'Program Title Sponsor',
+            'amount_range': '$15,000 - $25,000',
+            'benefits': [
+                'Program named after sponsor for full year',
+                'Logo on all program materials',
+                'Quarterly progress reports',
+                'VIP access to showcase events',
+                'Corporate volunteer opportunities'
+            ],
+            'ideal_for': 'Corporations seeking high visibility',
+            'duration': '12 months'
+        },
+        {
+            'package_name': 'Event Presenting Sponsor',
+            'amount_range': '$10,000 - $20,000',
+            'benefits': [
+                'Event title sponsorship',
+                'Premier logo placement',
+                'Speaking opportunity at event',
+                'VIP reception access',
+                'Social media recognition'
+            ],
+            'ideal_for': 'Corporations and major foundations',
+            'duration': 'Per event'
+        },
+        {
+            'package_name': 'Program Partner',
+            'amount_range': '$5,000 - $10,000',
+            'benefits': [
+                'Recognition in program materials',
+                'Quarterly impact reports',
+                'Invitation to private showcases',
+                'Employee engagement opportunities'
+            ],
+            'ideal_for': 'Mid-size foundations and corporations',
+            'duration': '6-12 months'
+        },
+        {
+            'package_name': 'Community Supporter',
+            'amount_range': '$1,000 - $5,000',
+            'benefits': [
+                'Recognition on website and newsletters',
+                'Annual impact report',
+                'Invitation to public events'
+            ],
+            'ideal_for': 'Local businesses and smaller foundations',
+            'duration': '12 months'
+        },
+        {
+            'package_name': 'Equipment Sponsor',
+            'amount_range': '$2,500 - $15,000',
+            'benefits': [
+                'Equipment naming rights',
+                'Plaque recognition',
+                'Program impact reports',
+                'Equipment demonstration opportunities'
+            ],
+            'ideal_for': 'Corporations with relevant products/services',
+            'duration': 'Equipment lifespan (3-5 years)'
+        }
+    ]
+    
+    return packages
+
+def main():
+    """Create comprehensive CSOAF database"""
+    
+    print("Creating comprehensive CSOAF programs and funding database...")
+    
+    # Create datasets
+    programs = create_csoaf_programs_database()
+    events = create_csoaf_events_database()
+    funding_breakdown = calculate_total_funding_needs(programs, events)
+    sponsorship_packages = create_sponsorship_packages()
+    
+    # Create timestamp
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    # Save programs as CSV
+    programs_df = pd.DataFrame(programs)
+    programs_file = f'csoaf_programs_{timestamp}.csv'
+    programs_df.to_csv(programs_file, index=False)
+    
+    # Save events as CSV
+    events_df = pd.DataFrame(events)
+    events_file = f'csoaf_events_{timestamp}.csv'
+    events_df.to_csv(events_file, index=False)
+    
+    # Save sponsorship packages
+    packages_df = pd.DataFrame(sponsorship_packages)
+    packages_file = f'csoaf_sponsorship_packages_{timestamp}.csv'
+    packages_df.to_csv(packages_file, index=False)
+    
+    # Save comprehensive data as JSON
+    complete_data = {
+        'programs': programs,
+        'events': events,
+        'funding_breakdown': funding_breakdown,
+        'sponsorship_packages': sponsorship_packages,
+        'created_at': datetime.now().isoformat(),
+        'total_programs': len(programs),
+        'total_events': len(events),
+        'total_annual_funding_need': funding_breakdown['total_annual_need']
+    }
+    
+    complete_file = f'csoaf_complete_data_{timestamp}.json'
+    with open(complete_file, 'w') as f:
+        json.dump(complete_data, f, indent=2)
+    
+    # Print summary
+    print(f"\n✅ CSOAF Database Created Successfully!")
+    print(f"📊 Programs: {len(programs)}")
+    print(f"🎪 Events: {len(events)}")
+    print(f"💰 Total Annual Funding Need: ${funding_breakdown['total_annual_need']:,.0f}")
+    print(f"📁 Files created:")
+    print(f"   - {programs_file}")
+    print(f"   - {events_file}")
+    print(f"   - {packages_file}")
+    print(f"   - {complete_file}")
+    
+    print(f"\n💡 Key Insights:")
+    print(f"   - Program costs: ${funding_breakdown['program_costs']:,.0f}")
+    print(f"   - Event costs: ${funding_breakdown['event_costs']:,.0f}")
+    print(f"   - Annual participants capacity: {sum(p['participants_capacity'] * p['sessions_per_year'] for p in programs):,}")
+    print(f"   - Average cost per participant session: ${sum(p['cost_per_session'] for p in programs) / len(programs):.0f}")
+    
+    return complete_data
+
+if __name__ == "__main__":
+    result = main()

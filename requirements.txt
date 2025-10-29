@@ -1,0 +1,8 @@
+# CSOAF Email Campaign System Requirements
+streamlit>=1.28.0
+pandas>=1.5.0
+plotly>=5.17.0
+mailchimp-marketing>=3.0.80
+openai>=1.0.0
+requests>=2.31.0
+python-dotenv>=1.0.0

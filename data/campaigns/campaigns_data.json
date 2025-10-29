@@ -1,0 +1,161 @@
+{
+  "active_campaigns": {
+    "bd2deddf": {
+      "campaign_id": "bd2deddf",
+      "campaign_name": "CSOAF Partnership Outreach - Tech Companies",
+      "campaign_type": "sponsorship",
+      "template_type": "sponsorship_request",
+      "template_name": "standard",
+      "target_criteria": {},
+      "schedule_date": null,
+      "custom_data": {
+        "event_date": "November 15, 2024",
+        "venue_name": "Downtown Arts Center",
+        "venue_address": "123 Arts Street, New York, NY"
+      },
+      "created_at": "2025-10-26T21:26:46.034381",
+      "status": "draft",
+      "recipients": [],
+      "sent_count": 0,
+      "failed_count": 0,
+      "open_rate": 0,
+      "click_rate": 0
+    },
+    "7d130cab": {
+      "campaign_id": "7d130cab",
+      "campaign_name": "CSOAF Partnership Outreach - Tech Companies",
+      "campaign_type": "sponsorship",
+      "template_type": "sponsorship_request",
+      "template_name": "standard",
+      "target_criteria": {},
+      "schedule_date": null,
+      "custom_data": {
+        "event_date": "November 15, 2024",
+        "venue_name": "Downtown Arts Center",
+        "venue_address": "123 Arts Street, New York, NY"
+      },
+      "created_at": "2025-10-26T21:27:44.591371",
+      "status": "draft",
+      "recipients": [
+        {
+          "email": "giving@primecyber.com",
+          "name": "",
+          "organization_name": "Prime Cyber Group",
+          "city": "Syracuse",
+          "state": "NY",
+          "industry_sector": "Technology",
+          "website": "https://www.primecyber.com",
+          "sponsorship_capacity": 294030,
+          "arts_program_interest": "High"
+        },
+        {
+          "email": "community@global.com",
+          "name": "",
+          "organization_name": "Global Systems Inc.",
+          "city": "Rochester",
+          "state": "NY",
+          "industry_sector": "Technology",
+          "website": "https://www.global.com",
+          "sponsorship_capacity": 285187,
+          "arts_program_interest": "High"
+        },
+        {
+          "email": "giving@fayettevilledat.com",
+          "name": "",
+          "organization_name": "Fayetteville Data Inc.",
+          "city": "Long Beach",
+          "state": "CA",
+          "industry_sector": "Technology",
+          "website": "https://www.fayettevilledat.com",
+          "sponsorship_capacity": 256132,
+          "arts_program_interest": "High"
+        },
+        {
+          "email": "community@professionalcap.com",
+          "name": "",
+          "organization_name": "Professional Capital Enterprises",
+          "city": "San Francisco",
+          "state": "CA",
+          "industry_sector": "Financial Services",
+          "website": "https://www.professionalcap.com",
+          "sponsorship_capacity": 106904,
+          "arts_program_interest": "High"
+        }
+      ],
+      "sent_count": 0,
+      "failed_count": 0,
+      "open_rate": 0,
+      "click_rate": 0,
+      "target_count": 4
+    },
+    "96857e4c": {
+      "campaign_id": "96857e4c",
+      "campaign_name": "CSOAF Partnership Outreach - Tech Companies",
+      "campaign_type": "sponsorship",
+      "template_type": "sponsorship_request",
+      "template_name": "standard",
+      "target_criteria": {},
+      "schedule_date": null,
+      "custom_data": {
+        "event_date": "November 15, 2024",
+        "venue_name": "Downtown Arts Center",
+        "venue_address": "123 Arts Street, New York, NY"
+      },
+      "created_at": "2025-10-26T21:36:57.912876",
+      "status": "draft",
+      "recipients": [
+        {
+          "email": "giving@primecyber.com",
+          "name": "",
+          "organization_name": "Prime Cyber Group",
+          "city": "Syracuse",
+          "state": "NY",
+          "industry_sector": "Technology",
+          "website": "https://www.primecyber.com",
+          "sponsorship_capacity": 294030,
+          "arts_program_interest": "High"
+        },
+        {
+          "email": "community@global.com",
+          "name": "",
+          "organization_name": "Global Systems Inc.",
+          "city": "Rochester",
+          "state": "NY",
+          "industry_sector": "Technology",
+          "website": "https://www.global.com",
+          "sponsorship_capacity": 285187,
+          "arts_program_interest": "High"
+        },
+        {
+          "email": "giving@fayettevilledat.com",
+          "name": "",
+          "organization_name": "Fayetteville Data Inc.",
+          "city": "Long Beach",
+          "state": "CA",
+          "industry_sector": "Technology",
+          "website": "https://www.fayettevilledat.com",
+          "sponsorship_capacity": 256132,
+          "arts_program_interest": "High"
+        },
+        {
+          "email": "community@professionalcap.com",
+          "name": "",
+          "organization_name": "Professional Capital Enterprises",
+          "city": "San Francisco",
+          "state": "CA",
+          "industry_sector": "Financial Services",
+          "website": "https://www.professionalcap.com",
+          "sponsorship_capacity": 106904,
+          "arts_program_interest": "High"
+        }
+      ],
+      "sent_count": 0,
+      "failed_count": 0,
+      "open_rate": 0,
+      "click_rate": 0,
+      "target_count": 4
+    }
+  },
+  "campaign_history": [],
+  "last_updated": "2025-10-26T21:36:57.952625"
+}

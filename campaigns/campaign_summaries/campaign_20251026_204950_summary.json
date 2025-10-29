@@ -1,0 +1,1448 @@
+{
+  "campaign_id": "campaign_20251026_204950",
+  "created_at": "2025-10-26T20:49:50.465145",
+  "description": "Looking for foundation grants to fund our veterans music therapy program in California, need about $50,000 to serve 100 veterans over the next year",
+  "parsed_campaign": {
+    "campaign_type": "program",
+    "target_audience": [
+      "veterans"
+    ],
+    "geographic_focus": [
+      "CA"
+    ],
+    "funding_amount": "$50,000",
+    "specific_programs": [
+      "music therapy",
+      "therapy program"
+    ],
+    "keywords": [
+      "therapy",
+      "veterans",
+      "music"
+    ],
+    "urgency": "normal",
+    "campaign_name": "Foundation",
+    "routing": {
+      "foundations": {
+        "priority": "high",
+        "focus": "program_funding",
+        "templates": [
+          "foundation_grant",
+          "program_partner"
+        ]
+      },
+      "corporations": {
+        "priority": "low",
+        "focus": "event_sponsorship",
+        "templates": [
+          "corporate_sponsor",
+          "event_partner"
+        ]
+      }
+    }
+  },
+  "matches": {
+    "foundations": [
+      {
+        "organization": "",
+        "score": 70.0,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://transcend.org",
+          "city": "Long Beach",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 100.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 69.33333333333334,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://kern.org",
+          "city": "Bakersfield",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 98.66666666666669, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 59.333333333333336,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://viewpoint.org",
+          "city": "Calabasas",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 78.66666666666667, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 56.5,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://washington.org",
+          "city": "Los Angeles",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 73.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 56.5,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://washington.org",
+          "city": "Fremont",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 73.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 54.666666666666664,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://krl.org",
+          "city": "Los Altos",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 69.33333333333333, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 54.0,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://natomasartsandeducation.org",
+          "city": "Sacramento",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 68.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 50.0,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://kyndryl.org",
+          "city": "Rye Brook",
+          "state": "NY",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 100.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 50.0,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://studentartsfoundation.org",
+          "city": "Rochester",
+          "state": "NY",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 100.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 50.0,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://irvingschoolsfoundation.org",
+          "city": "Irving",
+          "state": "TX",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 100.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 49.5,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://olivechildren.com",
+          "city": "Fremont",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 59.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 49.16666666666667,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://mariachischolarshipfoundation.org",
+          "city": "Bonita",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 58.333333333333336, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 47.5,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://priem.org",
+          "city": "Burlingame",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 55.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 47.5,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://educationaladvancement.org",
+          "city": "Austin",
+          "state": "TX",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 95.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 46.5,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://socialcinemafoundation.org",
+          "city": "New York",
+          "state": "NY",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 93.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 45.5,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://kenyaeducationfund.org",
+          "city": "New York",
+          "state": "NY",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 91.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 42.75,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://rhf.org",
+          "city": "Long Beach",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 45.5, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 40.25,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://seenfire.org",
+          "city": "San Marino",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 40.5, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 39.5,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://hoaghospitalfoundation.org",
+          "city": "Newport Beach",
+          "state": "CA",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 39.0, Priority: standard"
+      },
+      {
+        "organization": "",
+        "score": 39.25,
+        "type": "foundation",
+        "contact_info": {
+          "email": "",
+          "website": "https://timashevfamilyfoundation.org",
+          "city": "New York",
+          "state": "NY",
+          "mission": "",
+          "contact_person": "",
+          "phone": "",
+          "program_areas": "",
+          "annual_revenue": "",
+          "priority_level": ""
+        },
+        "alignment_reason": "Keywords: 0, Mission Score: 78.5, Priority: standard"
+      }
+    ],
+    "corporations": [],
+    "matched_programs": [
+      {
+        "program": "",
+        "category": "",
+        "score": 20,
+        "cost": 10000,
+        "description": "",
+        "target_audience": "Adults, Veterans, People with Disabilities",
+        "funding_need": 10000
+      }
+    ],
+    "campaign_summary": {
+      "campaign_type": "program",
+      "target_audience": [
+        "veterans"
+      ],
+      "geographic_focus": [
+        "CA"
+      ],
+      "funding_amount": "$50,000",
+      "specific_programs": [
+        "music therapy",
+        "therapy program"
+      ],
+      "keywords": [
+        "therapy",
+        "veterans",
+        "music"
+      ],
+      "urgency": "normal",
+      "campaign_name": "Foundation",
+      "routing": {
+        "foundations": {
+          "priority": "high",
+          "focus": "program_funding",
+          "templates": [
+            "foundation_grant",
+            "program_partner"
+          ]
+        },
+        "corporations": {
+          "priority": "low",
+          "focus": "event_sponsorship",
+          "templates": [
+            "corporate_sponsor",
+            "event_partner"
+          ]
+        }
+      }
+    }
+  },
+  "email_templates": {
+    "foundation_emails": [
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 70.0,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://transcend.org",
+            "city": "Long Beach",
+            "state": "CA",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 100.0, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 69.33333333333334,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://kern.org",
+            "city": "Bakersfield",
+            "state": "CA",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 98.66666666666669, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 59.333333333333336,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://viewpoint.org",
+            "city": "Calabasas",
+            "state": "CA",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 78.66666666666667, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 56.5,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://washington.org",
+            "city": "Los Angeles",
+            "state": "CA",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 73.0, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 56.5,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://washington.org",
+            "city": "Fremont",
+            "state": "CA",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 73.0, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 54.666666666666664,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://krl.org",
+            "city": "Los Altos",
+            "state": "CA",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 69.33333333333333, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 54.0,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://natomasartsandeducation.org",
+            "city": "Sacramento",
+            "state": "CA",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 68.0, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 50.0,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://kyndryl.org",
+            "city": "Rye Brook",
+            "state": "NY",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 100.0, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 50.0,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://studentartsfoundation.org",
+            "city": "Rochester",
+            "state": "NY",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 100.0, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Partnership Opportunity: Supporting Foundation at CSOAF",
+            "Grant Proposal: Foundation - Serving veterans in CA",
+            "Foundation Partnership: Expanding program Access"
+          ],
+          "body_template": "Dear  Foundation,\n\nI hope this message finds you well. I'm reaching out from the Center for the Study of Anesthesia and Fear (CSOAF) to explore a meaningful partnership opportunity that aligns with your foundation's commitment to strengthening communities through arts and healing.\n\n**About Our Organization:**\nCSOAF is a pioneering non-profit dedicated to advancing healing arts and accessible therapy programs. We serve veterans through innovative, evidence-based approaches that integrate mindfulness, creative arts, and therapeutic interventions.\n\n**The Opportunity - Foundation:**\nWe are seeking foundation support for our innovative program combining therapeutic arts and mindfulness practices for veterans. This program addresses critical needs in our community by addressing trauma and supporting healing for our veteran community through evidence-based arts therapies.\n\n**Funding Request: $50,000**\nYour foundation's support would enable us to:\n\u2022 Provide 200+ hours of individual therapy sessions\n\u2022 Train 15+ healthcare professionals in arts-based interventions\n\u2022 Conduct research on therapeutic outcomes and best practices\n\n**Why Partner with CSOAF:**\n\u2713 Proven track record with 95% participant satisfaction and measurable therapeutic outcomes\n\u2713 Evidence-based approach with measurable outcomes\n\u2713 Strong community partnerships in CA\n\u2713 Commitment to accessibility and inclusion\n\nI would welcome the opportunity to discuss how this partnership could advance your foundation's goals while creating lasting impact in our community.\n\nThank you for considering this proposal. I look forward to hearing from you.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Foundation",
+          "program_name": "Foundation",
+          "event_name": "Foundation",
+          "program_type": "program",
+          "target_audience": "veterans",
+          "location": "CA",
+          "geographic_area": "CA",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "",
+          "company_name": "",
+          "program_description": "our innovative program combining therapeutic arts and mindfulness practices for veterans",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for veterans. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "addressing trauma and supporting healing for our veteran community through evidence-based arts therapies",
+          "funding_amount": "$50,000",
+          "sponsorship_level": "Foundation Partnership",
+          "benefit_1": "Provide 200+ hours of individual therapy sessions",
+          "benefit_2": "Train 15+ healthcare professionals in arts-based interventions",
+          "benefit_3": "Conduct research on therapeutic outcomes and best practices",
+          "success_metric": "95% participant satisfaction and measurable therapeutic outcomes",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "veterans",
+          "impact_area": "therapy, veterans",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "",
+          "score": 50.0,
+          "type": "foundation",
+          "contact_info": {
+            "email": "",
+            "website": "https://irvingschoolsfoundation.org",
+            "city": "Irving",
+            "state": "TX",
+            "mission": "",
+            "contact_person": "",
+            "phone": "",
+            "program_areas": "",
+            "annual_revenue": "",
+            "priority_level": ""
+          },
+          "alignment_reason": "Keywords: 0, Mission Score: 100.0, Priority: standard"
+        },
+        "campaign_data": {
+          "campaign_type": "program",
+          "target_audience": [
+            "veterans"
+          ],
+          "geographic_focus": [
+            "CA"
+          ],
+          "funding_amount": "$50,000",
+          "specific_programs": [
+            "music therapy",
+            "therapy program"
+          ],
+          "keywords": [
+            "therapy",
+            "veterans",
+            "music"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Foundation",
+          "routing": {
+            "foundations": {
+              "priority": "high",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "low",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "corporation_emails": []
+  },
+  "status": "ready_for_review",
+  "metrics": {
+    "total_recipients": 20,
+    "foundation_recipients": 20,
+    "corporation_recipients": 0,
+    "estimated_reach": 10000,
+    "estimated_funding_potential": {
+      "foundation_potential": 300000,
+      "corporation_potential": 0,
+      "total_potential": 300000,
+      "conservative_estimate": 45000.0,
+      "optimistic_estimate": 105000.0
+    }
+  }
+}

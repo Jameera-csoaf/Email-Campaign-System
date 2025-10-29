@@ -1,0 +1,55 @@
+organization_name,organization_type,ticker_symbol,city,state,fortune_rank,industry_sector,estimated_min_sponsorship,estimated_max_sponsorship,estimated_typical_sponsorship,sponsorship_likelihood_score,arts_education_potential,data_source,created_at,geographic_priority
+Apple,corporation,AAPL,Cupertino,CA,4,Technology,37500,1500000,300000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.903278,High
+Alphabet,corporation,GOOGL,Mountain View,CA,11,Technology,37500,1500000,300000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.903459,High
+JPMorgan Chase,corporation,JPM,New York,NY,12,Financial Services,32500,1300000,260000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.905287,High
+Meta,corporation,META,Menlo Park,CA,15,Technology,37500,1500000,300000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.903615,High
+Citigroup,corporation,C,New York,NY,24,Financial Services,32500,1300000,260000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.905480,High
+Tesla,corporation,TSLA,Austin,CA,25,Technology,37500,1500000,300000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.903808,High
+IBM,corporation,IBM,Armonk,NY,38,Other,25000,1000000,200000,96,High,Fortune 1000 Analysis,2025-10-26T20:08:22.906308,High
+MetLife,corporation,MET,New York,NY,43,Financial Services,32500,1300000,260000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.906153,High
+Intel,corporation,INTC,Santa Clara,CA,45,Technology,37500,1500000,300000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.904146,High
+Disney,corporation,DIS,Burbank,CA,48,Media & Entertainment,35000,1400000,280000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.909015,High
+PepsiCo,corporation,PEP,Purchase,NY,55,Consumer,15000,500000,100000,94,High,Fortune 1000 Analysis,2025-10-26T20:08:22.912261,High
+Goldman Sachs,corporation,GS,New York,NY,55,Financial Services,19500,650000,130000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.905770,High
+Morgan Stanley,corporation,MS,New York,NY,61,Financial Services,19500,650000,130000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.905917,High
+Cisco,corporation,CSCO,San Jose,CA,65,Technology,22500,750000,150000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.904294,High
+American Express,corporation,AXP,New York,NY,77,Financial Services,19500,650000,130000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.906031,High
+Oracle,corporation,ORCL,Austin,CA,85,Technology,22500,750000,150000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.904413,High
+Warner Bros Discovery,corporation,WBD,Burbank,CA,95,Media & Entertainment,21000,700000,140000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.909123,High
+Charles Schwab,corporation,SCHW,Westlake,NY,95,Financial Services,19500,650000,130000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.911543,High
+Mondelez,corporation,MDLZ,Chicago,NY,95,Consumer,15000,500000,100000,90,High,Fortune 1000 Analysis,2025-10-26T20:08:22.912387,High
+Netflix,corporation,NFLX,Los Gatos,CA,115,Technology,15000,375000,75000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.903967,High
+Mastercard,corporation,MA,Purchase,NY,120,Financial Services,13000,325000,65000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.906446,High
+Gilead Sciences,corporation,GILD,Foster City,CA,125,Healthcare,11000,275000,55000,87,High,Fortune 1000 Analysis,2025-10-26T20:08:22.909457,High
+Blackstone,corporation,BX,New York,NY,135,Financial Services,13000,325000,65000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.906597,High
+Salesforce,corporation,CRM,San Francisco,CA,140,Technology,15000,375000,75000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.904539,High
+PG&E,corporation,PCG,San Francisco,CA,150,Energy,9000,225000,45000,85,High,Fortune 1000 Analysis,2025-10-26T20:08:22.910558,High
+Adobe,corporation,ADBE,San Jose,CA,160,Technology,15000,375000,75000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.904749,High
+Bank of New York Mellon,corporation,BK,New York,NY,180,Financial Services,13000,325000,65000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.911744,High
+Nvidia,corporation,NVDA,Santa Clara,CA,180,Technology,15000,375000,75000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.904908,High
+Uber,corporation,UBER,San Francisco,CA,185,Technology,15000,375000,75000,100,High,Fortune 1000 Analysis,2025-10-26T20:08:22.907825,High
+Colgate-Palmolive,corporation,CL,New York,NY,185,Consumer,10000,250000,50000,81,High,Fortune 1000 Analysis,2025-10-26T20:08:22.912096,High
+Regeneron,corporation,REGN,Tarrytown,NY,200,Healthcare,11000,275000,55000,80,High,Fortune 1000 Analysis,2025-10-26T20:08:22.909872,High
+PayPal,corporation,PYPL,San Jose,CA,220,Technology,15000,375000,75000,98,High,Fortune 1000 Analysis,2025-10-26T20:08:22.905048,High
+KKR,corporation,KKR,New York,NY,240,Financial Services,13000,325000,65000,96,High,Fortune 1000 Analysis,2025-10-26T20:08:22.906840,High
+Estee Lauder,corporation,EL,New York,NY,280,Consumer,5000,150000,25000,72,High,Fortune 1000 Analysis,2025-10-26T20:08:22.906998,High
+State Street,corporation,STT,Boston,NY,280,Financial Services,6500,195000,32500,92,High,Fortune 1000 Analysis,2025-10-26T20:08:22.911635,High
+Biogen,corporation,BIIB,Cambridge,CA,290,Healthcare,5500,165000,27500,71,High,Fortune 1000 Analysis,2025-10-26T20:08:22.909704,High
+Airbnb,corporation,ABNB,San Francisco,CA,320,Technology,7500,225000,37500,88,High,Fortune 1000 Analysis,2025-10-26T20:08:22.908327,High
+Sempra Energy,corporation,SRE,San Diego,CA,340,Energy,4500,135000,22500,66,Medium,Fortune 1000 Analysis,2025-10-26T20:08:22.910795,High
+Twitter,corporation,TWTR,San Francisco,CA,380,Technology,7500,225000,37500,82,High,Fortune 1000 Analysis,2025-10-26T20:08:22.908176,High
+Paramount,corporation,PARA,Los Angeles,CA,380,Media & Entertainment,7000,210000,35000,82,High,Fortune 1000 Analysis,2025-10-26T20:08:22.909279,High
+Intercontinental Exchange,corporation,ICE,Atlanta,NY,380,Other,5000,150000,25000,62,Medium,Fortune 1000 Analysis,2025-10-26T20:08:22.911904,High
+Snap,corporation,SNAP,Santa Monica,CA,420,Technology,7500,225000,37500,78,High,Fortune 1000 Analysis,2025-10-26T20:08:22.908485,High
+Simon Property Group,corporation,SPG,Indianapolis,NY,420,Real Estate,4000,120000,20000,58,Medium,Fortune 1000 Analysis,2025-10-26T20:08:22.910993,High
+Lyft,corporation,LYFT,San Francisco,CA,450,Technology,7500,225000,37500,75,High,Fortune 1000 Analysis,2025-10-26T20:08:22.908001,High
+Zoom,corporation,ZM,San Jose,CA,520,Technology,3750,112500,22500,68,Medium,Fortune 1000 Analysis,2025-10-26T20:08:22.908790,High
+Gap,corporation,GPS,San Francisco,CA,580,Consumer,2500,75000,15000,42,Low,Fortune 1000 Analysis,2025-10-26T20:08:22.910041,High
+DocuSign,corporation,DOCU,San Francisco,CA,650,Technology,3750,112500,22500,55,Medium,Fortune 1000 Analysis,2025-10-26T20:08:22.908656,High
+Boston Properties,corporation,BXP,Boston,NY,680,Real Estate,2000,60000,12000,32,Low,Fortune 1000 Analysis,2025-10-26T20:08:22.911231,High
+Levi Strauss,corporation,LEVI,San Francisco,CA,720,Consumer,2500,75000,15000,28,Low,Fortune 1000 Analysis,2025-10-26T20:08:22.910164,High
+Equity Residential,corporation,EQR,Chicago,CA,750,Real Estate,2000,60000,12000,25,Low,Fortune 1000 Analysis,2025-10-26T20:08:22.911411,High
+Slack,corporation,WORK,San Francisco,CA,780,Technology,3750,112500,22500,42,Low,Fortune 1000 Analysis,2025-10-26T20:08:22.908894,High
+Ralph Lauren,corporation,RL,New York,NY,850,Consumer,2500,75000,15000,20,Low,Fortune 1000 Analysis,2025-10-26T20:08:22.907293,High
+Williams-Sonoma,corporation,WSM,San Francisco,CA,890,Consumer,2500,75000,15000,20,Low,Fortune 1000 Analysis,2025-10-26T20:08:22.910316,High
+Tiffany & Co,corporation,TIF,New York,NY,920,Consumer,2500,75000,15000,20,Low,Fortune 1000 Analysis,2025-10-26T20:08:22.907572,High

@@ -1,0 +1,11 @@
+organization_name,organization_type,ticker_symbol,city,state,website,industry_sector,arts_sponsorship_history,education_programs,estimated_min_sponsorship,estimated_max_sponsorship,estimated_typical_sponsorship,sponsorship_evidence_count,dollar_amounts_found,scraped_at,data_quality_score
+JPMorgan Chase,corporation,JPM,New York,NY,https://www.jpmorganchase.com,Financial Services,,Supporting long-term climate initiatives and sustainable development,15000,300000,97500,0,$2; $1; $2,2025-10-24T17:55:26.529983,60
+Citigroup,corporation,C,New York,NY,https://www.citigroup.com,Financial Services,,Citi Foundation; Citi Impact Fund; Launching the Affordable Housing Resident Initiative,15000,300000,75000,0,,2025-10-24T17:55:43.990225,40
+Goldman Sachs,corporation,GS,New York,NY,https://www.goldmansachs.com,Financial Services,,,15000,300000,75000,0,,2025-10-24T17:55:57.079936,20
+Morgan Stanley,corporation,MS,New York,NY,https://www.morganstanley.com,Financial Services,,MS GIFT Donor Advised Fund,15000,300000,97500,0,$1; $77; $1,2025-10-24T17:56:21.148807,60
+American Express,corporation,AXP,New York,NY,https://www.americanexpress.com,Financial Services,,,15000,300000,75000,0,,2025-10-24T17:57:08.829918,20
+MetLife,corporation,MET,New York,NY,https://www.metlife.com,Other,,MetLife Foundation; MetLife Foundation,5000,200000,30000,0,,2025-10-24T17:57:23.634375,40
+Pfizer,corporation,PFE,New York,NY,https://www.pfizer.com,Healthcare,,,5000,200000,39000,0,$2; $100; $3,2025-10-24T17:57:42.132352,40
+IBM,corporation,IBM,Armonk,NY,https://www.ibm.com,Other,,,10000,100000,25000,0,,2025-10-24T17:57:58.283366,20
+Mastercard,corporation,MA,Purchase,NY,https://www.mastercard.com,Financial Services,,,10000,100000,25000,0,,2025-10-24T17:58:14.299721,20
+Colgate-Palmolive,corporation,CL,New York,NY,https://www.colgatepalmolive.com,Other,,,10000,100000,25000,0,,2025-10-24T17:58:29.131843,20

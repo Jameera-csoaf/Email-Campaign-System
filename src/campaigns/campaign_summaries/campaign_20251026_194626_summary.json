@@ -1,0 +1,1169 @@
+{
+  "campaign_id": "campaign_20251026_194626",
+  "created_at": "2025-10-26T19:46:26.060289",
+  "description": "We need corporate sponsors for our annual healing arts gala in New York, aiming to raise $75,000 to support our new adaptive dance program for children with autism",
+  "parsed_campaign": {
+    "campaign_type": "event",
+    "target_audience": [
+      "children",
+      "disabilities"
+    ],
+    "geographic_focus": [
+      "NY"
+    ],
+    "funding_amount": "$75,000",
+    "specific_programs": [
+      "adaptive dance",
+      "dance program",
+      "art program"
+    ],
+    "keywords": [
+      "arts",
+      "healing",
+      "autism",
+      "children",
+      "dance"
+    ],
+    "urgency": "normal",
+    "campaign_name": "Healing Arts Campaign",
+    "routing": {
+      "foundations": {
+        "priority": "low",
+        "focus": "program_funding",
+        "templates": [
+          "foundation_grant",
+          "program_partner"
+        ]
+      },
+      "corporations": {
+        "priority": "high",
+        "focus": "event_sponsorship",
+        "templates": [
+          "corporate_sponsor",
+          "event_partner"
+        ]
+      }
+    }
+  },
+  "matches": {
+    "foundations": [],
+    "corporations": [
+      {
+        "organization": "JPMorgan Chase",
+        "score": 58.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.jpmorganchase.com",
+          "city": "New York",
+          "state": "NY",
+          "industry": "Financial Services"
+        },
+        "sponsorship_capacity": {
+          "min": 15000,
+          "max": 300000,
+          "typical": 97500
+        },
+        "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+      },
+      {
+        "organization": "Morgan Stanley",
+        "score": 58.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.morganstanley.com",
+          "city": "New York",
+          "state": "NY",
+          "industry": "Financial Services"
+        },
+        "sponsorship_capacity": {
+          "min": 15000,
+          "max": 300000,
+          "typical": 97500
+        },
+        "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+      },
+      {
+        "organization": "Citigroup",
+        "score": 52.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.citigroup.com",
+          "city": "New York",
+          "state": "NY",
+          "industry": "Financial Services"
+        },
+        "sponsorship_capacity": {
+          "min": 15000,
+          "max": 300000,
+          "typical": 75000
+        },
+        "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+      },
+      {
+        "organization": "Pfizer",
+        "score": 52.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.pfizer.com",
+          "city": "New York",
+          "state": "NY",
+          "industry": "Healthcare"
+        },
+        "sponsorship_capacity": {
+          "min": 5000,
+          "max": 200000,
+          "typical": 39000
+        },
+        "alignment_reason": "Industry: healthcare, Sponsorship History: 0 events"
+      },
+      {
+        "organization": "Goldman Sachs",
+        "score": 46.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.goldmansachs.com",
+          "city": "New York",
+          "state": "NY",
+          "industry": "Financial Services"
+        },
+        "sponsorship_capacity": {
+          "min": 15000,
+          "max": 300000,
+          "typical": 75000
+        },
+        "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+      },
+      {
+        "organization": "American Express",
+        "score": 46.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.americanexpress.com",
+          "city": "New York",
+          "state": "NY",
+          "industry": "Financial Services"
+        },
+        "sponsorship_capacity": {
+          "min": 15000,
+          "max": 300000,
+          "typical": 75000
+        },
+        "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+      },
+      {
+        "organization": "Mastercard",
+        "score": 46.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.mastercard.com",
+          "city": "Purchase",
+          "state": "NY",
+          "industry": "Financial Services"
+        },
+        "sponsorship_capacity": {
+          "min": 10000,
+          "max": 100000,
+          "typical": 25000
+        },
+        "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+      },
+      {
+        "organization": "MetLife",
+        "score": 37.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.metlife.com",
+          "city": "New York",
+          "state": "NY",
+          "industry": "Other"
+        },
+        "sponsorship_capacity": {
+          "min": 5000,
+          "max": 200000,
+          "typical": 30000
+        },
+        "alignment_reason": "Industry: other, Sponsorship History: 0 events"
+      },
+      {
+        "organization": "IBM",
+        "score": 31.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.ibm.com",
+          "city": "Armonk",
+          "state": "NY",
+          "industry": "Other"
+        },
+        "sponsorship_capacity": {
+          "min": 10000,
+          "max": 100000,
+          "typical": 25000
+        },
+        "alignment_reason": "Industry: other, Sponsorship History: 0 events"
+      },
+      {
+        "organization": "Colgate-Palmolive",
+        "score": 31.0,
+        "type": "corporation",
+        "contact_info": {
+          "website": "https://www.colgatepalmolive.com",
+          "city": "New York",
+          "state": "NY",
+          "industry": "Other"
+        },
+        "sponsorship_capacity": {
+          "min": 10000,
+          "max": 100000,
+          "typical": 25000
+        },
+        "alignment_reason": "Industry: other, Sponsorship History: 0 events"
+      }
+    ],
+    "matched_programs": [
+      {
+        "program": "Adaptive Visual Arts Studio",
+        "category": "Visual Arts",
+        "score": 115,
+        "cost": 9000,
+        "description": "Open studio program providing adaptive tools and techniques for visual arts creation across all disability types",
+        "target_audience": "People with Disabilities, Adults, Children/Youth",
+        "funding_need": 9000
+      },
+      {
+        "program": "Family Healing Arts Program",
+        "category": "General Arts",
+        "score": 115,
+        "cost": 5000,
+        "description": "Multi-disciplinary arts program for families affected by disability, fostering connection through shared creative experiences",
+        "target_audience": "Families, Children/Youth, People with Disabilities",
+        "funding_need": 5000
+      },
+      {
+        "program": "Sensory Integration Arts Program",
+        "category": "Healing Arts",
+        "score": 115,
+        "cost": 11000,
+        "description": "Multi-sensory arts program designed for individuals with autism and sensory processing differences",
+        "target_audience": "People with Disabilities, Children/Youth",
+        "funding_need": 11000
+      },
+      {
+        "program": "Adaptive Dance Movement Therapy",
+        "category": "Dance",
+        "score": 95,
+        "cost": 12000,
+        "description": "Therapeutic dance program designed for individuals with disabilities, focusing on movement as healing and self-expression",
+        "target_audience": "People with Disabilities, Adults",
+        "funding_need": 12000
+      },
+      {
+        "program": "Art Therapy for Trauma Recovery",
+        "category": "Visual Arts",
+        "score": 65,
+        "cost": 10000,
+        "description": "Visual arts therapy program helping individuals process trauma through creative expression and guided art-making",
+        "target_audience": "Adults, Veterans, People with Disabilities",
+        "funding_need": 10000
+      },
+      {
+        "program": "Creative Writing & Storytelling",
+        "category": "General Arts",
+        "score": 55,
+        "cost": 7000,
+        "description": "Adaptive writing program using technology and alternative communication methods to support creative expression",
+        "target_audience": "People with Disabilities, Adults, Children/Youth",
+        "funding_need": 7000
+      },
+      {
+        "program": "Professional Development for Artists",
+        "category": "General Arts",
+        "score": 45,
+        "cost": 8000,
+        "description": "Training program for artists working with diverse populations, focusing on inclusive practices and adaptive techniques",
+        "target_audience": "Adults, Artists, Educators",
+        "funding_need": 8000
+      },
+      {
+        "program": "Inclusive Music Therapy Sessions",
+        "category": "Music",
+        "score": 40,
+        "cost": 15000,
+        "description": "Music therapy program for diverse abilities, using instruments and voice to promote healing and social connection",
+        "target_audience": "People with Disabilities, Children/Youth, Adults",
+        "funding_need": 15000
+      },
+      {
+        "program": "Inclusive Theater Workshop",
+        "category": "Theater",
+        "score": 40,
+        "cost": 8000,
+        "description": "Collaborative theater program bringing together people of all abilities to create and perform original works",
+        "target_audience": "People with Disabilities, Children/Youth, Adults",
+        "funding_need": 8000
+      },
+      {
+        "program": "Mindfulness & Meditation Circle",
+        "category": "Healing Arts",
+        "score": 35,
+        "cost": 6000,
+        "description": "Guided mindfulness and meditation sessions focused on mental wellness and stress reduction for all abilities",
+        "target_audience": "Adults, People with Disabilities, Families",
+        "funding_need": 6000
+      }
+    ],
+    "campaign_summary": {
+      "campaign_type": "event",
+      "target_audience": [
+        "children",
+        "disabilities"
+      ],
+      "geographic_focus": [
+        "NY"
+      ],
+      "funding_amount": "$75,000",
+      "specific_programs": [
+        "adaptive dance",
+        "dance program",
+        "art program"
+      ],
+      "keywords": [
+        "arts",
+        "healing",
+        "autism",
+        "children",
+        "dance"
+      ],
+      "urgency": "normal",
+      "campaign_name": "Healing Arts Campaign",
+      "routing": {
+        "foundations": {
+          "priority": "low",
+          "focus": "program_funding",
+          "templates": [
+            "foundation_grant",
+            "program_partner"
+          ]
+        },
+        "corporations": {
+          "priority": "high",
+          "focus": "event_sponsorship",
+          "templates": [
+            "corporate_sponsor",
+            "event_partner"
+          ]
+        }
+      }
+    }
+  },
+  "email_templates": {
+    "foundation_emails": [],
+    "corporation_emails": [
+      {
+        "template": {
+          "subject_templates": [
+            "Corporate Partnership: Healing Arts Campaign - Premium Sponsorship Opportunity",
+            "Exclusive Sponsorship: Healing Arts Campaign in NY",
+            "Community Impact Partnership: Healing Arts Campaign Sponsorship"
+          ],
+          "body_template": "Dear JPMorgan Chase Team,\n\nI hope this email finds you well. I'm writing to present an exclusive corporate sponsorship opportunity for Healing Arts Campaign, hosted by the Center for the Study of Anesthesia and Fear (CSOAF).\n\n**About the Event - Healing Arts Campaign:**\nThis fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.\n\n**Sponsorship Investment: Presenting Sponsor ($25,000)**\nYour sponsorship will provide significant visibility and community impact:\n\n**Visibility Benefits:**\n\u2022 Company logo prominently displayed at event venue\n\u2022 Recognition in all promotional materials and social media\n\u2022 Speaking opportunity for company representative\n\u2022 Professional networking with 150-200 expected attendees\n\n**Community Impact:**\n\u2022 Direct support for children, disabilities\n\u2022 Measurable outcomes in arts, healing\n\u2022 Partnership with respected non-profit organization\n\u2022 Tax-deductible contribution supporting local community\n\n**Why Partner with CSOAF:**\n\u2713 Established presence in NY\n\u2713 Strong community reputation and media relationships\n\u2713 Professional event management with proven results\n\u2713 Meaningful cause that resonates with employees and customers\n\n**Available Sponsorship Levels:**\n\u2022 Presenting Sponsor: $25,000 - Maximum visibility and exclusivity\n\u2022 Supporting Sponsor: $15,000 - Significant recognition package\n\u2022 Community Partner: $5,000 - Essential support acknowledgment\n\nI would love to schedule a brief call to discuss how this partnership can benefit JPMorgan Chase while creating lasting community impact.\n\nThank you for your consideration.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Healing Arts Campaign",
+          "program_name": "Healing Arts Campaign",
+          "event_name": "Healing Arts Campaign",
+          "target_audience": "children, disabilities",
+          "location": "NY",
+          "geographic_area": "NY",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "JPMorgan Chase",
+          "company_name": "JPMorgan Chase",
+          "program_description": "our healing arts event providing accessible therapeutic interventions for children, disabilities",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "removing barriers and creating inclusive therapeutic opportunities for individuals with diverse abilities",
+          "funding_amount": "$75,000",
+          "sponsorship_level": "Presenting Sponsor ($25,000)",
+          "benefit_1": "Reach 100+ children with accessible arts education",
+          "benefit_2": "Establish family engagement and parent education components",
+          "benefit_3": "Develop sustainable programming for long-term impact",
+          "success_metric": "strong community partnerships and participant engagement",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "children, disabilities",
+          "impact_area": "arts, healing",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "JPMorgan Chase",
+          "score": 58.0,
+          "type": "corporation",
+          "contact_info": {
+            "website": "https://www.jpmorganchase.com",
+            "city": "New York",
+            "state": "NY",
+            "industry": "Financial Services"
+          },
+          "sponsorship_capacity": {
+            "min": 15000,
+            "max": 300000,
+            "typical": 97500
+          },
+          "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+        },
+        "campaign_data": {
+          "campaign_type": "event",
+          "target_audience": [
+            "children",
+            "disabilities"
+          ],
+          "geographic_focus": [
+            "NY"
+          ],
+          "funding_amount": "$75,000",
+          "specific_programs": [
+            "adaptive dance",
+            "dance program",
+            "art program"
+          ],
+          "keywords": [
+            "arts",
+            "healing",
+            "autism",
+            "children",
+            "dance"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Healing Arts Campaign",
+          "routing": {
+            "foundations": {
+              "priority": "low",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "high",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Corporate Partnership: Healing Arts Campaign - Premium Sponsorship Opportunity",
+            "Exclusive Sponsorship: Healing Arts Campaign in NY",
+            "Community Impact Partnership: Healing Arts Campaign Sponsorship"
+          ],
+          "body_template": "Dear Morgan Stanley Team,\n\nI hope this email finds you well. I'm writing to present an exclusive corporate sponsorship opportunity for Healing Arts Campaign, hosted by the Center for the Study of Anesthesia and Fear (CSOAF).\n\n**About the Event - Healing Arts Campaign:**\nThis fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.\n\n**Sponsorship Investment: Presenting Sponsor ($25,000)**\nYour sponsorship will provide significant visibility and community impact:\n\n**Visibility Benefits:**\n\u2022 Company logo prominently displayed at event venue\n\u2022 Recognition in all promotional materials and social media\n\u2022 Speaking opportunity for company representative\n\u2022 Professional networking with 150-200 expected attendees\n\n**Community Impact:**\n\u2022 Direct support for children, disabilities\n\u2022 Measurable outcomes in arts, healing\n\u2022 Partnership with respected non-profit organization\n\u2022 Tax-deductible contribution supporting local community\n\n**Why Partner with CSOAF:**\n\u2713 Established presence in NY\n\u2713 Strong community reputation and media relationships\n\u2713 Professional event management with proven results\n\u2713 Meaningful cause that resonates with employees and customers\n\n**Available Sponsorship Levels:**\n\u2022 Presenting Sponsor: $25,000 - Maximum visibility and exclusivity\n\u2022 Supporting Sponsor: $15,000 - Significant recognition package\n\u2022 Community Partner: $5,000 - Essential support acknowledgment\n\nI would love to schedule a brief call to discuss how this partnership can benefit Morgan Stanley while creating lasting community impact.\n\nThank you for your consideration.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Healing Arts Campaign",
+          "program_name": "Healing Arts Campaign",
+          "event_name": "Healing Arts Campaign",
+          "target_audience": "children, disabilities",
+          "location": "NY",
+          "geographic_area": "NY",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "Morgan Stanley",
+          "company_name": "Morgan Stanley",
+          "program_description": "our healing arts event providing accessible therapeutic interventions for children, disabilities",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "removing barriers and creating inclusive therapeutic opportunities for individuals with diverse abilities",
+          "funding_amount": "$75,000",
+          "sponsorship_level": "Presenting Sponsor ($25,000)",
+          "benefit_1": "Reach 100+ children with accessible arts education",
+          "benefit_2": "Establish family engagement and parent education components",
+          "benefit_3": "Develop sustainable programming for long-term impact",
+          "success_metric": "strong community partnerships and participant engagement",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "children, disabilities",
+          "impact_area": "arts, healing",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "Morgan Stanley",
+          "score": 58.0,
+          "type": "corporation",
+          "contact_info": {
+            "website": "https://www.morganstanley.com",
+            "city": "New York",
+            "state": "NY",
+            "industry": "Financial Services"
+          },
+          "sponsorship_capacity": {
+            "min": 15000,
+            "max": 300000,
+            "typical": 97500
+          },
+          "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+        },
+        "campaign_data": {
+          "campaign_type": "event",
+          "target_audience": [
+            "children",
+            "disabilities"
+          ],
+          "geographic_focus": [
+            "NY"
+          ],
+          "funding_amount": "$75,000",
+          "specific_programs": [
+            "adaptive dance",
+            "dance program",
+            "art program"
+          ],
+          "keywords": [
+            "arts",
+            "healing",
+            "autism",
+            "children",
+            "dance"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Healing Arts Campaign",
+          "routing": {
+            "foundations": {
+              "priority": "low",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "high",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Corporate Partnership: Healing Arts Campaign - Premium Sponsorship Opportunity",
+            "Exclusive Sponsorship: Healing Arts Campaign in NY",
+            "Community Impact Partnership: Healing Arts Campaign Sponsorship"
+          ],
+          "body_template": "Dear Citigroup Team,\n\nI hope this email finds you well. I'm writing to present an exclusive corporate sponsorship opportunity for Healing Arts Campaign, hosted by the Center for the Study of Anesthesia and Fear (CSOAF).\n\n**About the Event - Healing Arts Campaign:**\nThis fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.\n\n**Sponsorship Investment: Presenting Sponsor ($25,000)**\nYour sponsorship will provide significant visibility and community impact:\n\n**Visibility Benefits:**\n\u2022 Company logo prominently displayed at event venue\n\u2022 Recognition in all promotional materials and social media\n\u2022 Speaking opportunity for company representative\n\u2022 Professional networking with 150-200 expected attendees\n\n**Community Impact:**\n\u2022 Direct support for children, disabilities\n\u2022 Measurable outcomes in arts, healing\n\u2022 Partnership with respected non-profit organization\n\u2022 Tax-deductible contribution supporting local community\n\n**Why Partner with CSOAF:**\n\u2713 Established presence in NY\n\u2713 Strong community reputation and media relationships\n\u2713 Professional event management with proven results\n\u2713 Meaningful cause that resonates with employees and customers\n\n**Available Sponsorship Levels:**\n\u2022 Presenting Sponsor: $25,000 - Maximum visibility and exclusivity\n\u2022 Supporting Sponsor: $15,000 - Significant recognition package\n\u2022 Community Partner: $5,000 - Essential support acknowledgment\n\nI would love to schedule a brief call to discuss how this partnership can benefit Citigroup while creating lasting community impact.\n\nThank you for your consideration.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Healing Arts Campaign",
+          "program_name": "Healing Arts Campaign",
+          "event_name": "Healing Arts Campaign",
+          "target_audience": "children, disabilities",
+          "location": "NY",
+          "geographic_area": "NY",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "Citigroup",
+          "company_name": "Citigroup",
+          "program_description": "our healing arts event providing accessible therapeutic interventions for children, disabilities",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "removing barriers and creating inclusive therapeutic opportunities for individuals with diverse abilities",
+          "funding_amount": "$75,000",
+          "sponsorship_level": "Presenting Sponsor ($25,000)",
+          "benefit_1": "Reach 100+ children with accessible arts education",
+          "benefit_2": "Establish family engagement and parent education components",
+          "benefit_3": "Develop sustainable programming for long-term impact",
+          "success_metric": "strong community partnerships and participant engagement",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "children, disabilities",
+          "impact_area": "arts, healing",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "Citigroup",
+          "score": 52.0,
+          "type": "corporation",
+          "contact_info": {
+            "website": "https://www.citigroup.com",
+            "city": "New York",
+            "state": "NY",
+            "industry": "Financial Services"
+          },
+          "sponsorship_capacity": {
+            "min": 15000,
+            "max": 300000,
+            "typical": 75000
+          },
+          "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+        },
+        "campaign_data": {
+          "campaign_type": "event",
+          "target_audience": [
+            "children",
+            "disabilities"
+          ],
+          "geographic_focus": [
+            "NY"
+          ],
+          "funding_amount": "$75,000",
+          "specific_programs": [
+            "adaptive dance",
+            "dance program",
+            "art program"
+          ],
+          "keywords": [
+            "arts",
+            "healing",
+            "autism",
+            "children",
+            "dance"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Healing Arts Campaign",
+          "routing": {
+            "foundations": {
+              "priority": "low",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "high",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Corporate Partnership: Healing Arts Campaign - Premium Sponsorship Opportunity",
+            "Exclusive Sponsorship: Healing Arts Campaign in NY",
+            "Community Impact Partnership: Healing Arts Campaign Sponsorship"
+          ],
+          "body_template": "Dear Pfizer Team,\n\nI hope this email finds you well. I'm writing to present an exclusive corporate sponsorship opportunity for Healing Arts Campaign, hosted by the Center for the Study of Anesthesia and Fear (CSOAF).\n\n**About the Event - Healing Arts Campaign:**\nThis fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.\n\n**Sponsorship Investment: Presenting Sponsor ($25,000)**\nYour sponsorship will provide significant visibility and community impact:\n\n**Visibility Benefits:**\n\u2022 Company logo prominently displayed at event venue\n\u2022 Recognition in all promotional materials and social media\n\u2022 Speaking opportunity for company representative\n\u2022 Professional networking with 150-200 expected attendees\n\n**Community Impact:**\n\u2022 Direct support for children, disabilities\n\u2022 Measurable outcomes in arts, healing\n\u2022 Partnership with respected non-profit organization\n\u2022 Tax-deductible contribution supporting local community\n\n**Why Partner with CSOAF:**\n\u2713 Established presence in NY\n\u2713 Strong community reputation and media relationships\n\u2713 Professional event management with proven results\n\u2713 Meaningful cause that resonates with employees and customers\n\n**Available Sponsorship Levels:**\n\u2022 Presenting Sponsor: $25,000 - Maximum visibility and exclusivity\n\u2022 Supporting Sponsor: $15,000 - Significant recognition package\n\u2022 Community Partner: $5,000 - Essential support acknowledgment\n\nI would love to schedule a brief call to discuss how this partnership can benefit Pfizer while creating lasting community impact.\n\nThank you for your consideration.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Healing Arts Campaign",
+          "program_name": "Healing Arts Campaign",
+          "event_name": "Healing Arts Campaign",
+          "target_audience": "children, disabilities",
+          "location": "NY",
+          "geographic_area": "NY",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "Pfizer",
+          "company_name": "Pfizer",
+          "program_description": "our healing arts event providing accessible therapeutic interventions for children, disabilities",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "removing barriers and creating inclusive therapeutic opportunities for individuals with diverse abilities",
+          "funding_amount": "$75,000",
+          "sponsorship_level": "Presenting Sponsor ($25,000)",
+          "benefit_1": "Reach 100+ children with accessible arts education",
+          "benefit_2": "Establish family engagement and parent education components",
+          "benefit_3": "Develop sustainable programming for long-term impact",
+          "success_metric": "strong community partnerships and participant engagement",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "children, disabilities",
+          "impact_area": "arts, healing",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "Pfizer",
+          "score": 52.0,
+          "type": "corporation",
+          "contact_info": {
+            "website": "https://www.pfizer.com",
+            "city": "New York",
+            "state": "NY",
+            "industry": "Healthcare"
+          },
+          "sponsorship_capacity": {
+            "min": 5000,
+            "max": 200000,
+            "typical": 39000
+          },
+          "alignment_reason": "Industry: healthcare, Sponsorship History: 0 events"
+        },
+        "campaign_data": {
+          "campaign_type": "event",
+          "target_audience": [
+            "children",
+            "disabilities"
+          ],
+          "geographic_focus": [
+            "NY"
+          ],
+          "funding_amount": "$75,000",
+          "specific_programs": [
+            "adaptive dance",
+            "dance program",
+            "art program"
+          ],
+          "keywords": [
+            "arts",
+            "healing",
+            "autism",
+            "children",
+            "dance"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Healing Arts Campaign",
+          "routing": {
+            "foundations": {
+              "priority": "low",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "high",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Corporate Partnership: Healing Arts Campaign - Premium Sponsorship Opportunity",
+            "Exclusive Sponsorship: Healing Arts Campaign in NY",
+            "Community Impact Partnership: Healing Arts Campaign Sponsorship"
+          ],
+          "body_template": "Dear Goldman Sachs Team,\n\nI hope this email finds you well. I'm writing to present an exclusive corporate sponsorship opportunity for Healing Arts Campaign, hosted by the Center for the Study of Anesthesia and Fear (CSOAF).\n\n**About the Event - Healing Arts Campaign:**\nThis fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.\n\n**Sponsorship Investment: Presenting Sponsor ($25,000)**\nYour sponsorship will provide significant visibility and community impact:\n\n**Visibility Benefits:**\n\u2022 Company logo prominently displayed at event venue\n\u2022 Recognition in all promotional materials and social media\n\u2022 Speaking opportunity for company representative\n\u2022 Professional networking with 150-200 expected attendees\n\n**Community Impact:**\n\u2022 Direct support for children, disabilities\n\u2022 Measurable outcomes in arts, healing\n\u2022 Partnership with respected non-profit organization\n\u2022 Tax-deductible contribution supporting local community\n\n**Why Partner with CSOAF:**\n\u2713 Established presence in NY\n\u2713 Strong community reputation and media relationships\n\u2713 Professional event management with proven results\n\u2713 Meaningful cause that resonates with employees and customers\n\n**Available Sponsorship Levels:**\n\u2022 Presenting Sponsor: $25,000 - Maximum visibility and exclusivity\n\u2022 Supporting Sponsor: $15,000 - Significant recognition package\n\u2022 Community Partner: $5,000 - Essential support acknowledgment\n\nI would love to schedule a brief call to discuss how this partnership can benefit Goldman Sachs while creating lasting community impact.\n\nThank you for your consideration.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Healing Arts Campaign",
+          "program_name": "Healing Arts Campaign",
+          "event_name": "Healing Arts Campaign",
+          "target_audience": "children, disabilities",
+          "location": "NY",
+          "geographic_area": "NY",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "Goldman Sachs",
+          "company_name": "Goldman Sachs",
+          "program_description": "our healing arts event providing accessible therapeutic interventions for children, disabilities",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "removing barriers and creating inclusive therapeutic opportunities for individuals with diverse abilities",
+          "funding_amount": "$75,000",
+          "sponsorship_level": "Presenting Sponsor ($25,000)",
+          "benefit_1": "Reach 100+ children with accessible arts education",
+          "benefit_2": "Establish family engagement and parent education components",
+          "benefit_3": "Develop sustainable programming for long-term impact",
+          "success_metric": "strong community partnerships and participant engagement",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "children, disabilities",
+          "impact_area": "arts, healing",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "Goldman Sachs",
+          "score": 46.0,
+          "type": "corporation",
+          "contact_info": {
+            "website": "https://www.goldmansachs.com",
+            "city": "New York",
+            "state": "NY",
+            "industry": "Financial Services"
+          },
+          "sponsorship_capacity": {
+            "min": 15000,
+            "max": 300000,
+            "typical": 75000
+          },
+          "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+        },
+        "campaign_data": {
+          "campaign_type": "event",
+          "target_audience": [
+            "children",
+            "disabilities"
+          ],
+          "geographic_focus": [
+            "NY"
+          ],
+          "funding_amount": "$75,000",
+          "specific_programs": [
+            "adaptive dance",
+            "dance program",
+            "art program"
+          ],
+          "keywords": [
+            "arts",
+            "healing",
+            "autism",
+            "children",
+            "dance"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Healing Arts Campaign",
+          "routing": {
+            "foundations": {
+              "priority": "low",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "high",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Corporate Partnership: Healing Arts Campaign - Premium Sponsorship Opportunity",
+            "Exclusive Sponsorship: Healing Arts Campaign in NY",
+            "Community Impact Partnership: Healing Arts Campaign Sponsorship"
+          ],
+          "body_template": "Dear American Express Team,\n\nI hope this email finds you well. I'm writing to present an exclusive corporate sponsorship opportunity for Healing Arts Campaign, hosted by the Center for the Study of Anesthesia and Fear (CSOAF).\n\n**About the Event - Healing Arts Campaign:**\nThis fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.\n\n**Sponsorship Investment: Presenting Sponsor ($25,000)**\nYour sponsorship will provide significant visibility and community impact:\n\n**Visibility Benefits:**\n\u2022 Company logo prominently displayed at event venue\n\u2022 Recognition in all promotional materials and social media\n\u2022 Speaking opportunity for company representative\n\u2022 Professional networking with 150-200 expected attendees\n\n**Community Impact:**\n\u2022 Direct support for children, disabilities\n\u2022 Measurable outcomes in arts, healing\n\u2022 Partnership with respected non-profit organization\n\u2022 Tax-deductible contribution supporting local community\n\n**Why Partner with CSOAF:**\n\u2713 Established presence in NY\n\u2713 Strong community reputation and media relationships\n\u2713 Professional event management with proven results\n\u2713 Meaningful cause that resonates with employees and customers\n\n**Available Sponsorship Levels:**\n\u2022 Presenting Sponsor: $25,000 - Maximum visibility and exclusivity\n\u2022 Supporting Sponsor: $15,000 - Significant recognition package\n\u2022 Community Partner: $5,000 - Essential support acknowledgment\n\nI would love to schedule a brief call to discuss how this partnership can benefit American Express while creating lasting community impact.\n\nThank you for your consideration.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Healing Arts Campaign",
+          "program_name": "Healing Arts Campaign",
+          "event_name": "Healing Arts Campaign",
+          "target_audience": "children, disabilities",
+          "location": "NY",
+          "geographic_area": "NY",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "American Express",
+          "company_name": "American Express",
+          "program_description": "our healing arts event providing accessible therapeutic interventions for children, disabilities",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "removing barriers and creating inclusive therapeutic opportunities for individuals with diverse abilities",
+          "funding_amount": "$75,000",
+          "sponsorship_level": "Presenting Sponsor ($25,000)",
+          "benefit_1": "Reach 100+ children with accessible arts education",
+          "benefit_2": "Establish family engagement and parent education components",
+          "benefit_3": "Develop sustainable programming for long-term impact",
+          "success_metric": "strong community partnerships and participant engagement",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "children, disabilities",
+          "impact_area": "arts, healing",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "American Express",
+          "score": 46.0,
+          "type": "corporation",
+          "contact_info": {
+            "website": "https://www.americanexpress.com",
+            "city": "New York",
+            "state": "NY",
+            "industry": "Financial Services"
+          },
+          "sponsorship_capacity": {
+            "min": 15000,
+            "max": 300000,
+            "typical": 75000
+          },
+          "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+        },
+        "campaign_data": {
+          "campaign_type": "event",
+          "target_audience": [
+            "children",
+            "disabilities"
+          ],
+          "geographic_focus": [
+            "NY"
+          ],
+          "funding_amount": "$75,000",
+          "specific_programs": [
+            "adaptive dance",
+            "dance program",
+            "art program"
+          ],
+          "keywords": [
+            "arts",
+            "healing",
+            "autism",
+            "children",
+            "dance"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Healing Arts Campaign",
+          "routing": {
+            "foundations": {
+              "priority": "low",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "high",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Corporate Partnership: Healing Arts Campaign - Premium Sponsorship Opportunity",
+            "Exclusive Sponsorship: Healing Arts Campaign in NY",
+            "Community Impact Partnership: Healing Arts Campaign Sponsorship"
+          ],
+          "body_template": "Dear Mastercard Team,\n\nI hope this email finds you well. I'm writing to present an exclusive corporate sponsorship opportunity for Healing Arts Campaign, hosted by the Center for the Study of Anesthesia and Fear (CSOAF).\n\n**About the Event - Healing Arts Campaign:**\nThis fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.\n\n**Sponsorship Investment: Presenting Sponsor ($25,000)**\nYour sponsorship will provide significant visibility and community impact:\n\n**Visibility Benefits:**\n\u2022 Company logo prominently displayed at event venue\n\u2022 Recognition in all promotional materials and social media\n\u2022 Speaking opportunity for company representative\n\u2022 Professional networking with 150-200 expected attendees\n\n**Community Impact:**\n\u2022 Direct support for children, disabilities\n\u2022 Measurable outcomes in arts, healing\n\u2022 Partnership with respected non-profit organization\n\u2022 Tax-deductible contribution supporting local community\n\n**Why Partner with CSOAF:**\n\u2713 Established presence in NY\n\u2713 Strong community reputation and media relationships\n\u2713 Professional event management with proven results\n\u2713 Meaningful cause that resonates with employees and customers\n\n**Available Sponsorship Levels:**\n\u2022 Presenting Sponsor: $25,000 - Maximum visibility and exclusivity\n\u2022 Supporting Sponsor: $15,000 - Significant recognition package\n\u2022 Community Partner: $5,000 - Essential support acknowledgment\n\nI would love to schedule a brief call to discuss how this partnership can benefit Mastercard while creating lasting community impact.\n\nThank you for your consideration.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Healing Arts Campaign",
+          "program_name": "Healing Arts Campaign",
+          "event_name": "Healing Arts Campaign",
+          "target_audience": "children, disabilities",
+          "location": "NY",
+          "geographic_area": "NY",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "Mastercard",
+          "company_name": "Mastercard",
+          "program_description": "our healing arts event providing accessible therapeutic interventions for children, disabilities",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "removing barriers and creating inclusive therapeutic opportunities for individuals with diverse abilities",
+          "funding_amount": "$75,000",
+          "sponsorship_level": "Presenting Sponsor ($25,000)",
+          "benefit_1": "Reach 100+ children with accessible arts education",
+          "benefit_2": "Establish family engagement and parent education components",
+          "benefit_3": "Develop sustainable programming for long-term impact",
+          "success_metric": "strong community partnerships and participant engagement",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "children, disabilities",
+          "impact_area": "arts, healing",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "Mastercard",
+          "score": 46.0,
+          "type": "corporation",
+          "contact_info": {
+            "website": "https://www.mastercard.com",
+            "city": "Purchase",
+            "state": "NY",
+            "industry": "Financial Services"
+          },
+          "sponsorship_capacity": {
+            "min": 10000,
+            "max": 100000,
+            "typical": 25000
+          },
+          "alignment_reason": "Industry: financial services, Sponsorship History: 0 events"
+        },
+        "campaign_data": {
+          "campaign_type": "event",
+          "target_audience": [
+            "children",
+            "disabilities"
+          ],
+          "geographic_focus": [
+            "NY"
+          ],
+          "funding_amount": "$75,000",
+          "specific_programs": [
+            "adaptive dance",
+            "dance program",
+            "art program"
+          ],
+          "keywords": [
+            "arts",
+            "healing",
+            "autism",
+            "children",
+            "dance"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Healing Arts Campaign",
+          "routing": {
+            "foundations": {
+              "priority": "low",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "high",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "template": {
+          "subject_templates": [
+            "Corporate Partnership: Healing Arts Campaign - Premium Sponsorship Opportunity",
+            "Exclusive Sponsorship: Healing Arts Campaign in NY",
+            "Community Impact Partnership: Healing Arts Campaign Sponsorship"
+          ],
+          "body_template": "Dear MetLife Team,\n\nI hope this email finds you well. I'm writing to present an exclusive corporate sponsorship opportunity for Healing Arts Campaign, hosted by the Center for the Study of Anesthesia and Fear (CSOAF).\n\n**About the Event - Healing Arts Campaign:**\nThis fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.\n\n**Sponsorship Investment: Presenting Sponsor ($25,000)**\nYour sponsorship will provide significant visibility and community impact:\n\n**Visibility Benefits:**\n\u2022 Company logo prominently displayed at event venue\n\u2022 Recognition in all promotional materials and social media\n\u2022 Speaking opportunity for company representative\n\u2022 Professional networking with 150-200 expected attendees\n\n**Community Impact:**\n\u2022 Direct support for children, disabilities\n\u2022 Measurable outcomes in arts, healing\n\u2022 Partnership with respected non-profit organization\n\u2022 Tax-deductible contribution supporting local community\n\n**Why Partner with CSOAF:**\n\u2713 Established presence in NY\n\u2713 Strong community reputation and media relationships\n\u2713 Professional event management with proven results\n\u2713 Meaningful cause that resonates with employees and customers\n\n**Available Sponsorship Levels:**\n\u2022 Presenting Sponsor: $25,000 - Maximum visibility and exclusivity\n\u2022 Supporting Sponsor: $15,000 - Significant recognition package\n\u2022 Community Partner: $5,000 - Essential support acknowledgment\n\nI would love to schedule a brief call to discuss how this partnership can benefit MetLife while creating lasting community impact.\n\nThank you for your consideration.\n\nBest regards,\n\nDr. Sarah Chen\nExecutive Director\nCenter for the Study of Anesthesia and Fear (CSOAF)\nschen@csoaf.org | (555) 123-4567"
+        },
+        "personalization_data": {
+          "campaign_name": "Healing Arts Campaign",
+          "program_name": "Healing Arts Campaign",
+          "event_name": "Healing Arts Campaign",
+          "target_audience": "children, disabilities",
+          "location": "NY",
+          "geographic_area": "NY",
+          "manager_name": "Dr. Sarah Chen",
+          "manager_title": "Executive Director",
+          "contact_information": "schen@csoaf.org | (555) 123-4567",
+          "foundation_name": "MetLife",
+          "company_name": "MetLife",
+          "program_description": "our healing arts event providing accessible therapeutic interventions for children, disabilities",
+          "event_description": "This fundraising event will bring together community leaders, healthcare professionals, and supporters to advance healing arts accessibility for children, disabilities. Featuring live performances, silent auction, and networking opportunities.",
+          "program_impact": "removing barriers and creating inclusive therapeutic opportunities for individuals with diverse abilities",
+          "funding_amount": "$75,000",
+          "sponsorship_level": "Presenting Sponsor ($25,000)",
+          "benefit_1": "Reach 100+ children with accessible arts education",
+          "benefit_2": "Establish family engagement and parent education components",
+          "benefit_3": "Develop sustainable programming for long-term impact",
+          "success_metric": "strong community partnerships and participant engagement",
+          "attendee_count": "150-200",
+          "program_beneficiaries": "children, disabilities",
+          "impact_area": "arts, healing",
+          "mission_alignment": "strengthening communities through arts and healing",
+          "presenting_amount": "$25,000",
+          "supporting_amount": "$15,000",
+          "community_amount": "$5,000"
+        },
+        "recipient_info": {
+          "organization": "MetLife",
+          "score": 37.0,
+          "type": "corporation",
+          "contact_info": {
+            "website": "https://www.metlife.com",
+            "city": "New York",
+            "state": "NY",
+            "industry": "Other"
+          },
+          "sponsorship_capacity": {
+            "min": 5000,
+            "max": 200000,
+            "typical": 30000
+          },
+          "alignment_reason": "Industry: other, Sponsorship History: 0 events"
+        },
+        "campaign_data": {
+          "campaign_type": "event",
+          "target_audience": [
+            "children",
+            "disabilities"
+          ],
+          "geographic_focus": [
+            "NY"
+          ],
+          "funding_amount": "$75,000",
+          "specific_programs": [
+            "adaptive dance",
+            "dance program",
+            "art program"
+          ],
+          "keywords": [
+            "arts",
+            "healing",
+            "autism",
+            "children",
+            "dance"
+          ],
+          "urgency": "normal",
+          "campaign_name": "Healing Arts Campaign",
+          "routing": {
+            "foundations": {
+              "priority": "low",
+              "focus": "program_funding",
+              "templates": [
+                "foundation_grant",
+                "program_partner"
+              ]
+            },
+            "corporations": {
+              "priority": "high",
+              "focus": "event_sponsorship",
+              "templates": [
+                "corporate_sponsor",
+                "event_partner"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "status": "ready_for_review",
+  "metrics": {
+    "total_recipients": 10,
+    "foundation_recipients": 0,
+    "corporation_recipients": 10,
+    "estimated_reach": 10000,
+    "estimated_funding_potential": {
+      "foundation_potential": 0,
+      "corporation_potential": 564000,
+      "total_potential": 564000,
+      "conservative_estimate": 84600.0,
+      "optimistic_estimate": 197400.0
+    }
+  }
+}
