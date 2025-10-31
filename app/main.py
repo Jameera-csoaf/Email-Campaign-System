@@ -32,6 +32,25 @@ try:
 except ImportError:
     AI_ENABLED = False  # No worries, you can still use everything else
 
+# Try to connect to our few-shot email AI system
+try:
+    from few_shot_email_ai import get_few_shot_email_ai
+    FEW_SHOT_AI_ENABLED = True  # Advanced AI email generation available
+except ImportError:
+    FEW_SHOT_AI_ENABLED = False  # Fall back to regular template suggestions
+
+# Import workflow management system
+try:
+    from workflow_manager import get_workflow_manager, show_workflow_progress_bar, show_step_navigation
+    from workflow_functions import (
+        show_create_campaign_workflow, show_ai_enhancement_workflow, 
+        show_template_editor_workflow, show_record_manager_workflow,
+        show_approval_center_workflow, show_send_campaign_workflow, show_analytics_workflow
+    )
+    WORKFLOW_ENABLED = True
+except ImportError:
+    WORKFLOW_ENABLED = False
+
 # Set up the file paths so the system can find everything it needs
 current_dir = os.path.dirname(os.path.abspath(__file__))
 src_dir = os.path.dirname(current_dir)
@@ -100,6 +119,36 @@ def main():
     fundraising orchestra - it coordinates all the different parts.
     """
     
+    # Initialize workflow system
+    if WORKFLOW_ENABLED:
+        workflow = get_workflow_manager()
+    
+    # Handle forced page navigation FIRST (from form submissions)
+    forced_page = None
+    if 'force_page' in st.session_state:
+        force_target = st.session_state.force_page
+        st.write(f"🔧 **FORCE_PAGE DETECTED:** {force_target}")
+        del st.session_state.force_page
+        
+        # Map force_page values to display names
+        page_mapping = {
+            'ai_enhancement': "🤖 AI Enhancement",
+            'campaign_creator': "🚀 Campaign Creator",
+            'template_editor': "📝 Template Editor",
+            'record_manager': "📋 Record Manager",
+            'approval_center': "✅ Approval Center",
+            'send_campaign': "📧 Send Campaign",
+            'analytics': "📈 Analytics"
+        }
+        
+        if force_target in page_mapping:
+            forced_page = page_mapping[force_target]
+            st.success(f"✅ Successfully navigated to: {forced_page}")
+        else:
+            st.error(f"❌ Unknown force_page: {force_target}")
+    else:
+        st.write("🔧 **No force_page in session_state**")
+    
     # Create the welcoming header that users see first
     st.markdown("""
     <div class="main-header">
@@ -108,12 +157,129 @@ def main():
     </div>
     """, unsafe_allow_html=True)
     
+    # Show workflow progress bar if enabled
+    if WORKFLOW_ENABLED:
+        st.markdown("### 🔄 Campaign Workflow Progress")
+        show_workflow_progress_bar()
+        st.markdown("---")
+    
     # Set up the navigation menu (your control panel)
-    st.sidebar.markdown("## 🎯 What Would You Like To Do?")
-    page = st.sidebar.selectbox(
-        "Choose your next step:",
-        ["📊 Dashboard", "🎯 Executive Dashboard", "🚀 Create Campaign", "🤖 AI Campaign Creator", "📧 Send Campaign", "📝 Template Editor", "📋 Record Manager", "✅ Approval Center", "📈 Analytics", "⚙️ Settings", "❓ Help Guide"]
+    st.sidebar.markdown("## 🎯 Campaign Workflow Steps")
+    
+    # Get current workflow step for navigation
+    if WORKFLOW_ENABLED:
+        current_step = workflow.get_current_step()
+        
+        # Workflow-based navigation
+        workflow_pages = [
+            ("📊 Dashboard", "dashboard"),
+            ("🚀 Campaign Creator", "campaign_creator"), 
+            ("🤖 AI Enhancement", "ai_enhancement"),
+            ("📝 Template Editor", "template_editor"),
+            ("📋 Record Manager", "record_manager"),
+            ("✅ Approval Center", "approval_center"),
+            ("📧 Send Campaign", "send_campaign"),
+            ("📈 Analytics", "analytics")
+        ]
+        
+        # Show workflow navigation
+        page_options = []
+        for page_name, step_id in workflow_pages:
+            if workflow.can_access_step(step_id):
+                if step_id == current_step:
+                    page_options.append(f"🔄 {page_name}")
+                elif step_id in st.session_state.workflow_state.get('completed_steps', set()):
+                    page_options.append(f"✅ {page_name}")
+                else:
+                    page_options.append(f"⏳ {page_name}")
+            else:
+                page_options.append(f"🔒 {page_name}")
+
+        # Use forced page if available, otherwise use selectbox
+        if forced_page:
+            page = forced_page
+            # Find the matching option with status prefix
+            matching_option = None
+            for option in page_options:
+                if forced_page in option:
+                    matching_option = option
+                    break
+            
+            if matching_option:
+                selected_index = page_options.index(matching_option)
+            else:
+                selected_index = 0
+                
+            # Show selectbox but with forced selection
+            st.sidebar.selectbox(
+                "Choose your workflow step:",
+                page_options,
+                index=selected_index,
+                key="sidebar_nav_forced"
+            )
+        else:
+            page = st.sidebar.selectbox(
+                "Choose your workflow step:",
+                page_options,
+                index=page_options.index(st.session_state.get('navigate_to', page_options[0])) if st.session_state.get('navigate_to') in page_options else 0
+            )
+        
+        # Clear navigation override after use
+        if 'navigate_to' in st.session_state:
+            page = st.session_state.navigate_to
+            del st.session_state.navigate_to
+        
+        # Extract actual page name - use forced page if available
+        if forced_page:
+            selected_page = forced_page
+        else:
+            selected_page = page.split(" ", 1)[1] if " " in page else page
+    else:
+        # Fallback to traditional navigation
+        page = st.sidebar.selectbox(
+            "Choose your next step:",
+            ["📊 Dashboard", "🚀 Campaign Creator", "🤖 AI Enhancement", "📝 Template Editor", "📋 Record Manager", "✅ Approval Center", "📧 Send Campaign", "📈 Analytics", "⚙️ Settings"]
+        )
+        selected_page = page
+    
+    # Additional navigation
+    st.sidebar.markdown("## 🔧 Additional Tools")
+    additional_page = st.sidebar.selectbox(
+        "Extra features:",
+        ["None", "⚙️ Settings", "❓ Help Guide", "🎯 Executive Dashboard"],
+        index=0
     )
+    
+    # Only use additional_page if no forced_page is active
+    if additional_page != "None" and not forced_page:
+        selected_page = additional_page
+    
+    # Show step navigation controls
+    if WORKFLOW_ENABLED:
+        st.sidebar.markdown("## 🔄 Workflow Controls")
+        show_step_navigation()
+        
+        # Add real-time debugging panel
+        st.sidebar.markdown("## 🔧 Live Debug Panel")
+        with st.sidebar.expander("📊 Workflow State", expanded=True):
+            workflow = get_workflow_manager()
+            current_step = workflow.get_current_step()
+            campaign_data = workflow.get_campaign_data()
+            
+            st.write(f"**Current Step:** {current_step}")
+            st.write(f"**Selected Page:** {selected_page}")
+            st.write(f"**Campaign Data Keys:** {list(campaign_data.keys()) if campaign_data else 'None'}")
+            
+            if hasattr(st.session_state, 'workflow_state'):
+                wf_state = st.session_state.workflow_state
+                st.write(f"**Completed Steps:** {list(wf_state.get('completed_steps', set()))}")
+                st.write(f"**Step Outputs:** {list(wf_state.get('step_outputs', {}).keys())}")
+            else:
+                st.write("**Workflow State:** Not initialized")
+            
+            # Add refresh button
+            if st.button("🔄 Refresh Debug Info"):
+                st.rerun()
     
     # Check if everything is connected and working (like a health check)
     mailchimp_key = os.environ.get('MAILCHIMP_API_KEY')
@@ -129,25 +295,53 @@ def main():
         st.sidebar.markdown("**Setup**: API key required")
     
     # Main content based on selected page
-    if page == "📊 Dashboard":
+    if WORKFLOW_ENABLED:
+        workflow = get_workflow_manager()
+        
+        # Debug information for navigation
+        st.markdown(f"**🔧 Debug:** Selected page = `{selected_page}`, Current workflow step = `{workflow.get_current_step()}`")
+    
+    if "Dashboard" in selected_page and "Executive" not in selected_page:
+        if WORKFLOW_ENABLED:
+            workflow.set_current_step('dashboard')
         show_dashboard()
-    elif page == "🎯 Executive Dashboard":
+    elif "Executive Dashboard" in selected_page:
         show_executive_dashboard()
-    elif page == "🚀 Create Campaign":
-        show_create_campaign()
-    elif page == "🤖 AI Campaign Creator":
-        show_ai_campaign_creator()
-    elif page == "📧 Send Campaign":
-        show_send_campaign()
-    elif page == "� Template Editor":
-        show_template_editor()
-    elif page == "📋 Record Manager":
-        show_record_manager()
-    elif page == "✅ Approval Center":
-        show_approval_center()
-    elif page == "�📈 Analytics":
-        show_analytics()
-    elif page == "⚙️ Settings":
+    elif "Campaign Creator" in selected_page:
+        if WORKFLOW_ENABLED:
+            st.write(f"🔧 **BEFORE set_current_step:** {workflow.get_current_step()}")
+            workflow.set_current_step('campaign_creator')
+            st.write(f"🔧 **AFTER set_current_step:** {workflow.get_current_step()}")
+            st.info(f"🔧 Navigated to Campaign Creator. Current step: {workflow.get_current_step()}")
+        show_create_campaign_workflow()
+    elif "AI Enhancement" in selected_page:
+        if WORKFLOW_ENABLED:
+            workflow.set_current_step('ai_enhancement')
+            st.info(f"🔧 Navigated to AI Enhancement. Current step: {workflow.get_current_step()}")
+        show_ai_enhancement_workflow()
+    elif "Template Editor" in selected_page:
+        if WORKFLOW_ENABLED:
+            workflow.set_current_step('template_editor')
+        show_template_editor_workflow()
+    elif "Record Manager" in selected_page:
+        if WORKFLOW_ENABLED:
+            workflow.set_current_step('record_manager')
+        show_record_manager_workflow()
+    elif "Approval Center" in selected_page:
+        if WORKFLOW_ENABLED:
+            workflow.set_current_step('approval_center')
+        show_approval_center_workflow()
+    elif "Send Campaign" in selected_page:
+        if WORKFLOW_ENABLED:
+            workflow.set_current_step('send_campaign')
+        show_send_campaign_workflow()
+    elif "Analytics" in selected_page:
+        if WORKFLOW_ENABLED:
+            workflow.set_current_step('analytics')
+        show_analytics_workflow()
+    elif "Settings" in selected_page:
+        show_settings()
+    elif "Help Guide" in selected_page:
         show_settings()
     elif page == "❓ Help Guide":
         show_help_guide()
@@ -157,6 +351,32 @@ def show_dashboard():
     
     st.markdown("## 📊 Campaign Dashboard")
     
+    # Add debugging information at the top
+    if WORKFLOW_ENABLED:
+        workflow = get_workflow_manager()
+        with st.expander("🔧 Dashboard Debug Info", expanded=False):
+            st.write(f"**Current Workflow Step:** {workflow.get_current_step()}")
+            st.write(f"**WORKFLOW_ENABLED:** {WORKFLOW_ENABLED}")
+            campaign_data = workflow.get_campaign_data()
+            st.write(f"**Campaign Data:** {campaign_data}")
+            if hasattr(st.session_state, 'workflow_state'):
+                st.write(f"**Session State Exists:** True")
+                st.write(f"**Workflow State:** {st.session_state.workflow_state}")
+            else:
+                st.write(f"**Session State Exists:** False")
+    
+    # Add prominent workflow start button
+    if WORKFLOW_ENABLED:
+        st.markdown("### 🚀 Start New Campaign")
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            if st.button("🎯 Create New Campaign", type="primary", use_container_width=True):
+                # Set session state to override navigation
+                st.session_state.navigate_to = "🚀 Campaign Creator"
+                st.rerun()
+        
+        st.markdown("---")
+    
     # System status check
     mailchimp_key = os.environ.get('MAILCHIMP_API_KEY')
     
@@ -164,13 +384,38 @@ def show_dashboard():
         st.markdown("""
         <div class="warning-alert">
             <h4>⚠️ Setup Required</h4>
-            <p>Please set your MAILCHIMP_API_KEY environment variable to start sending campaigns.</p>
-            <p>Your key: <code>[Your-Mailchimp-API-Key-Here]</code></p>
+            <p>Please set your MAILCHIMP_API_KEY to start sending campaigns.</p>
         </div>
         """, unsafe_allow_html=True)
         
-        if st.button("🔧 Set API Key"):
-            st.code("$env:MAILCHIMP_API_KEY='[Your-Mailchimp-API-Key-Here]'")
+        # Create API key input
+        with st.form("api_key_form"):
+            st.write("**Enter your Mailchimp API Key:**")
+            api_key_input = st.text_input("Mailchimp API Key", 
+                                         placeholder="Enter your Mailchimp API key here...",
+                                         type="password")
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.form_submit_button("🔧 Set API Key", use_container_width=True):
+                    if api_key_input:
+                        # Set the environment variable for this session
+                        os.environ['MAILCHIMP_API_KEY'] = api_key_input
+                        st.success("✅ API Key set successfully! Please refresh the page.")
+                        st.rerun()
+                    else:
+                        st.error("Please enter your API key first.")
+            
+            with col2:
+                if st.form_submit_button("⏭️ Skip for Demo", use_container_width=True):
+                    # Set a demo key to skip this step
+                    os.environ['MAILCHIMP_API_KEY'] = 'demo-key-for-presentation'
+                    st.info("🎯 Demo mode activated! You can explore all features except actual email sending.")
+                    st.rerun()
+        
+        st.markdown("---")
+        st.write("**Alternative: Set via PowerShell Terminal**")
+        st.code("$env:MAILCHIMP_API_KEY='your-api-key-here'")
         return
     
     # Success status
@@ -467,26 +712,299 @@ def show_create_campaign():
             
             st.markdown("### 📧 Email Settings")
             
-            # AI-suggested subject line
-            ai_subject = ""
-            if 'ai_extracted' in st.session_state:
-                try:
-                    suggestions = campaign_ai.generate_campaign_suggestions(st.session_state['ai_extracted'])
-                    ai_subject = suggestions.get("subject_line", "")
-                except:
-                    pass
+            # Generate intelligent template suggestions based on targeting
+            targeting_criteria = {
+                'target_industries': target_industries,
+                'target_states': target_states,
+                'min_sponsorship': min_sponsorship,
+                'campaign_description': campaign_description,
+                'arts_interest': arts_interest
+            }
+            
+            try:
+                template_suggestions = campaign_ai.generate_intelligent_template_suggestions(targeting_criteria)
+                
+                # Display AI Template Recommendations
+                with st.expander("🤖 AI Template & Subject Line Recommendations", expanded=True):
+                    st.markdown("**📋 Recommended Email Templates:**")
+                    
+                    for i, template in enumerate(template_suggestions["recommended_templates"][:3]):
+                        with st.container():
+                            col1, col2 = st.columns([3, 1])
+                            with col1:
+                                st.markdown(f"**{template['name']}**")
+                                st.caption(f"{template['description']} - {template['best_for']}")
+                            with col2:
+                                if st.button(f"Use Template", key=f"template_{i}"):
+                                    st.session_state['selected_template'] = template['name']
+                                    st.success(f"✅ Selected: {template['name']}")
+                    
+                    st.markdown("**📧 Suggested Subject Lines:**")
+                    for subject in template_suggestions["subject_lines"][:4]:
+                        col1, col2 = st.columns([4, 1])
+                        with col1:
+                            st.code(subject)
+                        with col2:
+                            if st.button("Use", key=f"subject_{subject[:10]}"):
+                                st.session_state['selected_subject'] = subject
+                                st.success("✅ Subject set!")
+                    
+                    if template_suggestions["email_approaches"]:
+                        st.markdown("**💡 Email Approach Recommendations:**")
+                        for approach in template_suggestions["email_approaches"][:3]:
+                            st.info(f"💡 {approach}")
+                    
+                    if template_suggestions["personalization_tips"]:
+                        st.markdown("**🎯 Personalization Tips:**")
+                        for tip in template_suggestions["personalization_tips"][:3]:
+                            st.write(f"• {tip}")
+            
+            except Exception as e:
+                st.info("💡 Fill in targeting criteria above to get AI template suggestions!")
+            
+            # Subject line input with AI suggestion
+            default_subject = st.session_state.get('selected_subject', '')
+            if not default_subject:
+                # AI-suggested subject line from original logic
+                if 'ai_extracted' in st.session_state:
+                    try:
+                        suggestions = campaign_ai.generate_campaign_suggestions(st.session_state['ai_extracted'])
+                        default_subject = suggestions.get("subject_line", "")
+                    except:
+                        pass
             
             subject_line = st.text_input(
                 "Subject Line 🤖",
-                value=ai_subject,
+                value=default_subject,
                 placeholder="Partnership Opportunity: {organization_name} x CSOAF",
-                help="AI-generated suggestion based on campaign type"
+                help="AI-generated suggestion based on campaign type and targeting"
             )
             
+            # Email template selection with AI recommendation
+            template_options = [
+                "Professional Standard", 
+                "Innovation Partnership",
+                "Community Impact Partnership", 
+                "Workforce Development Partnership",
+                "Premium Strategic Alliance",
+                "Event Invitation", 
+                "Corporate Collaboration"
+            ]
+            
+            default_template = st.session_state.get('selected_template', template_options[0])
             email_template = st.selectbox(
-                "Email Template",
-                ["Professional Standard", "Premium Partnership", "Event Invitation", "Corporate Collaboration"]
+                "Email Template 🤖",
+                template_options,
+                index=template_options.index(default_template) if default_template in template_options else 0,
+                help="Choose from AI-recommended templates or standard options"
             )
+            
+            # Email Template Preview
+            if st.checkbox("📖 Preview Email Template", value=False):
+                st.markdown("### 📧 Email Preview")
+                
+                # Create sample email content based on selected template
+                sample_org = "Example Corporation"
+                preview_content = ""
+                
+                if "Innovation Partnership" in email_template:
+                    preview_content = f"""
+**Subject:** {subject_line.replace('{organization_name}', sample_org)}
+
+Dear [Executive Name],
+
+I hope this message finds you well. As a leader in innovation, {sample_org} has consistently demonstrated a commitment to pushing boundaries and creating positive change.
+
+At the Center for Scholarship, Opportunity, Arts & Future (CSOAF), we're pioneering a new approach to arts education that aligns perfectly with your company's forward-thinking vision. Our programs integrate cutting-edge technology with creative expression, developing the kind of innovative thinking that drives business success.
+
+**Partnership Opportunity:**
+• Technology-enhanced arts education programs
+• Measurable student outcome tracking
+• Corporate innovation showcase opportunities
+• Employee engagement through arts initiatives
+
+We'd love to explore how {sample_org} can partner with us to transform education and build the creative workforce of tomorrow.
+
+Best regards,
+CSOAF Partnership Team
+"""
+                
+                elif "Community Impact" in email_template:
+                    preview_content = f"""
+**Subject:** {subject_line.replace('{organization_name}', sample_org)}
+
+Dear [Executive Name],
+
+{sample_org}'s commitment to community development and social responsibility has made a real difference in the lives of countless individuals.
+
+At CSOAF, we share your passion for creating positive community impact. Our arts education programs are transforming lives and strengthening communities across the region.
+
+**Community Partnership Benefits:**
+• Direct impact on local student success
+• Community engagement opportunities
+• Positive brand alignment with education
+• Measurable social responsibility outcomes
+
+Together, we can create lasting change that benefits our entire community.
+
+Warm regards,
+CSOAF Community Team
+"""
+                
+                elif "Workforce Development" in email_template:
+                    preview_content = f"""
+**Subject:** {subject_line.replace('{organization_name}', sample_org)}
+
+Dear [Executive Name],
+
+As {sample_org} continues to grow and innovate, developing a creative, adaptable workforce becomes increasingly crucial for your continued success.
+
+CSOAF's arts education programs develop exactly the skills your industry needs: creativity, problem-solving, collaboration, and innovative thinking.
+
+**Workforce Development Partnership:**
+• Creative problem-solving skill development
+• Employee engagement through arts programs
+• Pipeline of creative, adaptable talent
+• Enhanced company culture and innovation
+
+Let's discuss how arts education can strengthen your workforce development strategy.
+
+Best regards,
+CSOAF Workforce Development Team
+"""
+                
+                elif "Premium Strategic Alliance" in email_template:
+                    preview_content = f"""
+**Subject:** {subject_line.replace('{organization_name}', sample_org)}
+
+Dear [Executive Name],
+
+{sample_org}'s industry leadership and commitment to excellence make you an ideal strategic partner for an exclusive initiative that could transform education and create significant competitive advantages.
+
+CSOAF is offering a limited number of strategic alliance partnerships to visionary organizations ready to lead the future of education.
+
+**Strategic Alliance Benefits:**
+• Exclusive partnership positioning
+• Executive advisory board participation
+• Priority access to innovative programs
+• Significant brand visibility and thought leadership
+
+This is an invitation-only opportunity for organizations ready to make a transformational impact.
+
+I'd welcome the chance to discuss this strategic alliance personally.
+
+Best regards,
+CSOAF Executive Team
+"""
+                
+                else:  # Professional Standard
+                    preview_content = f"""
+**Subject:** {subject_line.replace('{organization_name}', sample_org)}
+
+Dear [Executive Name],
+
+I hope this message finds you well. I'm reaching out because {sample_org}'s values and commitment to excellence align perfectly with CSOAF's mission to transform arts education.
+
+**Partnership Opportunity:**
+• Professional arts education programs
+• Student scholarship opportunities
+• Corporate recognition and visibility
+• Community impact alignment
+
+We would be honored to explore a partnership that creates meaningful impact while supporting your corporate social responsibility goals.
+
+I'd welcome the opportunity to discuss how we can work together.
+
+Best regards,
+CSOAF Partnership Team
+"""
+                
+                st.markdown(preview_content)
+                st.info("💡 This preview shows how your email will be personalized for each recipient organization.")
+            
+            # Advanced AI Email Generation
+            st.markdown("---")
+            st.markdown("### 🤖 AI Email Generator")
+            st.markdown("Generate a personalized email using proven successful templates from our database")
+            
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                ai_email_prompt = st.text_area(
+                    "Campaign Description for AI",
+                    placeholder="Describe your campaign goals, target audience, and key messaging. E.g., 'Looking for technology partnerships for our STEM arts program targeting Fortune 500 companies in NYC'",
+                    height=100,
+                    help="The AI will use this description along with your targeting criteria to generate a personalized email"
+                )
+            
+            with col2:
+                st.markdown("<br>", unsafe_allow_html=True)  # Add some spacing
+                if st.button("🎯 Generate AI Email", type="secondary", disabled=not FEW_SHOT_AI_ENABLED):
+                    if ai_email_prompt.strip():
+                        with st.spinner("🧠 AI is crafting your email using proven templates..."):
+                            try:
+                                # Get few-shot AI instance
+                                few_shot_ai = get_few_shot_email_ai()
+                                
+                                # Prepare context from form data
+                                context = {
+                                    'campaign_name': campaign_name,
+                                    'targeting_description': targeting_description,
+                                    'selected_industries': industries,
+                                    'location_focus': location,
+                                    'sponsorship_tiers': sponsorship_tiers,
+                                    'user_description': ai_email_prompt
+                                }
+                                
+                                # Generate AI email
+                                ai_result = few_shot_ai.generate_email(context)
+                                
+                                if ai_result['success']:
+                                    st.success("✨ AI email generated successfully!")
+                                    
+                                    with st.expander("📧 AI-Generated Email", expanded=True):
+                                        st.markdown("**Subject:**")
+                                        st.code(ai_result['subject'], language="text")
+                                        
+                                        st.markdown("**Email Content:**")
+                                        st.markdown(ai_result['content'])
+                                        
+                                        st.markdown("**Template Used:**")
+                                        st.info(f"Based on: {ai_result['template_used']}")
+                                        
+                                        # Option to use this AI-generated email
+                                        if st.button("✅ Use This AI Email", key="use_ai_email"):
+                                            st.session_state['ai_generated_subject'] = ai_result['subject']
+                                            st.session_state['ai_generated_content'] = ai_result['content']
+                                            st.success("AI email saved! You can now create your campaign with this content.")
+                                            
+                                else:
+                                    st.error(f"AI generation failed: {ai_result['error']}")
+                                    st.info("💡 Using fallback template system instead")
+                                    
+                            except Exception as e:
+                                st.error(f"Error generating AI email: {str(e)}")
+                                st.info("💡 AI email generation is temporarily unavailable. Please use the template options above.")
+                    else:
+                        st.warning("Please provide a campaign description for the AI to work with.")
+                
+                if not FEW_SHOT_AI_ENABLED:
+                    st.info("🔧 Advanced AI email generation requires additional setup. Contact your administrator.")
+            
+            # Show saved AI content if available
+            if 'ai_generated_subject' in st.session_state:
+                st.markdown("---")
+                st.markdown("### 💾 Saved AI-Generated Content")
+                with st.expander("View Saved AI Email", expanded=False):
+                    st.markdown("**Subject:**")
+                    st.code(st.session_state['ai_generated_subject'], language="text")
+                    st.markdown("**Content:**")
+                    st.markdown(st.session_state['ai_generated_content'])
+                    
+                    if st.button("🗑️ Clear Saved Content", key="clear_ai_content"):
+                        del st.session_state['ai_generated_subject']
+                        del st.session_state['ai_generated_content']
+                        st.rerun()
+            
             
             # Submit button
             submitted = st.form_submit_button("🚀 Create AI-Enhanced Campaign", type="primary")

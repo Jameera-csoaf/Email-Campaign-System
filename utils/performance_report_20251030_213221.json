@@ -1,0 +1,62 @@
+{
+  "Data Loading Performance": {
+    "fortune1000_load_time": 0.02,
+    "fortune1000_records": 1000,
+    "fortune1000_columns": 18,
+    "campaigns_load_time": 0.043,
+    "campaigns_records": 700,
+    "status": "success"
+  },
+  "Search & Filter Performance": {
+    "status": "failed",
+    "error": "'company_name'"
+  },
+  "UI Component Performance": {
+    "chart_data_prep_time": 0.0151,
+    "chart_categories": 12,
+    "geographic_data_prep_time": 0.0008,
+    "geographic_locations": 49,
+    "metrics_calc_time": 0.0045,
+    "total_companies": 1000,
+    "high_value_prospects": 0,
+    "status": "success"
+  },
+  "Memory Usage Analysis": {
+    "initial_memory_mb": 81.77,
+    "after_data_load_mb": 81.77,
+    "data_load_memory_increase_mb": 0.0,
+    "final_memory_mb": 79.35,
+    "total_memory_increase_mb": -2.42,
+    "status": "success"
+  },
+  "Campaign Generation Performance": {
+    "target_selection_time": 0.0134,
+    "selected_targets": 10,
+    "template_generation_time": 0.0004,
+    "generated_templates": 10,
+    "status": "success"
+  },
+  "Database Query Performance": {
+    "select_all_time": 0.0,
+    "select_all_results": 1000,
+    "filter_by_state_time": 0.0009,
+    "filter_by_state_results": 21,
+    "group_by_industry_time": 0.0022,
+    "group_by_industry_results": 12,
+    "sort_by_name_time": 0.0,
+    "sort_by_name_results": 0,
+    "complex_filter_time": 0.0025,
+    "complex_filter_results": 9,
+    "status": "success"
+  },
+  "System Resource Usage": {
+    "cpu_usage_percent": 58.2,
+    "total_memory_gb": 15.69,
+    "available_memory_gb": 1.82,
+    "memory_usage_percent": 88.4,
+    "disk_total_gb": 931.4,
+    "disk_free_gb": 457.16,
+    "disk_usage_percent": 50.92,
+    "status": "success"
+  }
+}

@@ -273,6 +273,152 @@ class CampaignIntelligence:
             
         except Exception as e:
             return {"total_matches": 0, "high_value": 0, "total_potential": 0, "avg_potential": 0}
+    
+    def generate_intelligent_template_suggestions(self, targeting_options: Dict) -> Dict:
+        """
+        🎯 Generate Smart Template & Subject Line Suggestions
+        ====================================================
+        Analyzes your targeting criteria and suggests the most effective 
+        email templates and subject lines for maximum engagement.
+        
+        Args:
+            targeting_options: Dictionary containing:
+                - target_states: List of states
+                - target_industries: List of industries  
+                - min_sponsorship: Minimum sponsorship amount
+                - campaign_description: Description of campaign
+                - arts_interest: Level of arts education interest
+        
+        Returns:
+            Dictionary with suggested templates and subject lines
+        """
+        
+        # Extract targeting criteria
+        industries = targeting_options.get('target_industries', [])
+        states = targeting_options.get('target_states', [])
+        min_sponsorship = targeting_options.get('min_sponsorship', 50000)
+        description = targeting_options.get('campaign_description', '')
+        arts_interest = targeting_options.get('arts_interest', ['High'])
+        
+        suggestions = {
+            "recommended_templates": [],
+            "subject_lines": [],
+            "email_approaches": [],
+            "personalization_tips": []
+        }
+        
+        # 🎨 Template Selection Logic Based on Industry
+        if any(industry in industries for industry in ['Technology', 'Financial Services', 'Consulting']):
+            suggestions["recommended_templates"].append({
+                "name": "Innovation Partnership",
+                "description": "Emphasizes cutting-edge arts education and technology integration",
+                "best_for": "Tech companies and financial services",
+                "subject_template": "Innovation in Arts Education: Partnership with {organization_name}"
+            })
+            suggestions["subject_lines"].append("Transforming Education Through Arts & Technology Partnership")
+            suggestions["email_approaches"].append("Focus on innovation, measurable outcomes, and competitive advantage")
+        
+        if any(industry in industries for industry in ['Healthcare', 'Education', 'Non-Profit']):
+            suggestions["recommended_templates"].append({
+                "name": "Community Impact Partnership", 
+                "description": "Highlights community benefits and social responsibility",
+                "best_for": "Healthcare, education, and mission-driven organizations",
+                "subject_template": "Community Impact: {organization_name} x CSOAF Partnership"
+            })
+            suggestions["subject_lines"].append("Making a Difference: Arts Education Partnership Opportunity")
+            suggestions["email_approaches"].append("Emphasize community impact, student outcomes, and shared values")
+        
+        if any(industry in industries for industry in ['Manufacturing', 'Energy', 'Retail']):
+            suggestions["recommended_templates"].append({
+                "name": "Workforce Development Partnership",
+                "description": "Connects arts education to workforce development and employee engagement", 
+                "best_for": "Large corporations with workforce development focus",
+                "subject_template": "Workforce Development Through Arts: {organization_name} Partnership"
+            })
+            suggestions["subject_lines"].append("Building Tomorrow's Workforce Through Arts Education")
+            suggestions["email_approaches"].append("Link arts education to creativity, problem-solving, and employee development")
+        
+        # 💰 Sponsorship Level Considerations
+        if min_sponsorship >= 100000:
+            suggestions["recommended_templates"].append({
+                "name": "Premium Strategic Alliance",
+                "description": "High-value partnership with executive-level positioning",
+                "best_for": "Major sponsorship opportunities ($100K+)",
+                "subject_template": "Strategic Alliance Opportunity: {organization_name} Leadership"
+            })
+            suggestions["subject_lines"].append("Exclusive Partnership: CSOAF Strategic Alliance Invitation")
+            suggestions["personalization_tips"].append("Target C-suite executives and decision makers")
+            suggestions["email_approaches"].append("Focus on strategic value, brand alignment, and exclusive benefits")
+        
+        elif min_sponsorship >= 50000:
+            suggestions["recommended_templates"].append({
+                "name": "Professional Partnership",
+                "description": "Mid-tier professional engagement with concrete benefits",
+                "best_for": "Standard corporate partnerships ($50K-$100K)",
+                "subject_template": "Partnership Opportunity: {organization_name} & CSOAF"
+            })
+            suggestions["subject_lines"].append("Professional Partnership: Arts Education Initiative")
+            suggestions["personalization_tips"].append("Target department heads and senior managers")
+        
+        else:
+            suggestions["recommended_templates"].append({
+                "name": "Community Engagement",
+                "description": "Accessible partnership focusing on local community impact",
+                "best_for": "Smaller partnerships and local engagement",
+                "subject_template": "Community Partnership: {organization_name} & Local Arts"
+            })
+            suggestions["subject_lines"].append("Community Arts Education Partnership")
+            suggestions["personalization_tips"].append("Target community relations and local managers")
+        
+        # 🗺️ Geographic Personalization
+        if any(state in states for state in ['CA', 'NY', 'WA']):
+            suggestions["subject_lines"].append("West Coast Arts Innovation Partnership")
+            suggestions["personalization_tips"].append("Emphasize innovation, creativity, and progressive values")
+        
+        if any(state in states for state in ['TX', 'FL', 'AZ']):
+            suggestions["subject_lines"].append("Expanding Arts Education Across Growing Markets")
+            suggestions["personalization_tips"].append("Focus on growth, opportunity, and market expansion")
+        
+        # 🎭 Arts Interest Level Adaptations
+        if 'High' in arts_interest:
+            suggestions["email_approaches"].append("Lead with arts passion and detailed program benefits")
+            suggestions["subject_lines"].append("Exclusive Arts Education Partnership for Arts Advocates")
+        elif 'Medium' in arts_interest:
+            suggestions["email_approaches"].append("Balance arts benefits with broader educational and business value")
+            suggestions["subject_lines"].append("Education Partnership with Strong Arts Component")
+        else:
+            suggestions["email_approaches"].append("Focus on business value, workforce development, and general education benefits")
+            suggestions["subject_lines"].append("Strategic Education Partnership Opportunity")
+        
+        # 📝 Campaign Description Analysis
+        if description:
+            description_lower = description.lower()
+            if any(word in description_lower for word in ['innovation', 'technology', 'digital', 'modern']):
+                suggestions["subject_lines"].append("Innovation-Driven Arts Education Partnership")
+                suggestions["email_approaches"].append("Emphasize cutting-edge educational technology and modern teaching methods")
+            
+            if any(word in description_lower for word in ['community', 'local', 'neighborhood', 'region']):
+                suggestions["subject_lines"].append("Strengthening Our Community Through Arts Education")
+                suggestions["email_approaches"].append("Focus on local community impact and regional development")
+            
+            if any(word in description_lower for word in ['equity', 'inclusion', 'diversity', 'access']):
+                suggestions["subject_lines"].append("Expanding Access to Quality Arts Education")
+                suggestions["email_approaches"].append("Highlight equity, inclusion, and expanding educational access")
+        
+        # 🏆 Add general best practices
+        suggestions["personalization_tips"].extend([
+            "Research recent company news and initiatives",
+            "Reference specific company values or mission alignment",
+            "Include relevant local or industry statistics",
+            "Mention specific arts programs that align with company interests"
+        ])
+        
+        # Limit to top 5 suggestions for each category
+        for key in suggestions:
+            if isinstance(suggestions[key], list) and len(suggestions[key]) > 5:
+                suggestions[key] = suggestions[key][:5]
+        
+        return suggestions
 
 def get_campaign_intelligence():
     """Get campaign intelligence instance"""
